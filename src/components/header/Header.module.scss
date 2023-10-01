@@ -1,0 +1,47 @@
+.header {
+  padding: 2rem 0;
+  position: fixed;
+  z-index: 20000;
+  top: 60%;
+  transform: translateY(-50%);
+  right: 2%;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  gap: 1rem;
+
+  a {
+    font-family: var(--font-family--3);
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: start;
+    color: var(--color-tertiary--1);
+    transition: all 0.3s;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2rem;
+      height: 1px;
+      border-radius: 50%;
+      background-color: var(--color-tertiary--1);
+    }
+
+    &:hover {
+      color: var(--color-secondary--2);
+      cursor: pointer;
+    }
+  }
+  .active {
+    color: var(--color-secondary--2);
+    transform: translateX(-1.5rem) scale(1.05);
+  }
+}

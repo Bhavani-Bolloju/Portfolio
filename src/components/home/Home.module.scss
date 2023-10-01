@@ -1,0 +1,126 @@
+.home {
+  padding: 10rem 0 px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 85vh;
+
+  // background: url("../../assets/home/pattern_2.svg");
+  // background: url("../../assets/home/pattern_4.svg");
+
+  background: url("../../assets/home/pattern_6.svg");
+
+  background-color: var(--color-primary--1);
+
+  position: relative;
+
+  &__image {
+    width: 50%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 2rem;
+    color: var(--color-primary--1);
+    color: var(--color-tertiary--1);
+    font-size: 4rem;
+    text-wrap: wrap;
+    padding: 0 10rem;
+    font-family: var(--font-family--1);
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    cite {
+      font-size: 2rem;
+      text-align: end;
+    }
+  }
+
+  &__content {
+    padding: 8rem 2rem;
+    font-size: 2rem;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20rem 0;
+
+    h1 {
+      display: flex;
+      flex-direction: column;
+    }
+    .name {
+      display: flex;
+      flex-direction: column;
+      font-family: var(--font-family--1);
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: var(--heading-5);
+      margin-bottom: var(--margin-lg);
+      span {
+        &:nth-child(2) {
+          letter-spacing: -1px;
+          // font-size: 5rem;
+          font-size: var(--heading-secondary);
+          margin-top: 1rem;
+        }
+      }
+    }
+    .intro {
+      line-height: var(--line-height--1);
+      margin-bottom: var(--margin-md);
+      font-family: var(--font-family--2);
+    }
+
+    .highlight {
+      color: var(--color-tertiary--1);
+      font-weight: 500;
+    }
+
+    .btns {
+      display: flex;
+      gap: 2rem;
+      margin-top: var(--margin-md);
+    }
+
+    .icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 10rem;
+
+      svg {
+        fill: var(--color-secondary--2);
+      }
+    }
+  }
+
+  // .bar {
+  //   width: 2.2rem;
+  //   height: 100%;
+  //   background-color: var(--color-tertiary--1);
+  //   position: absolute;
+  //   right: 0;
+  //   top: 0rem;
+  // }
+
+  .html,
+  .html2 {
+    position: absolute;
+    color: var(--color-secondary--2);
+    opacity: 0.08;
+    display: inline-block;
+    // color: red;
+    font-family: var(--font-family--5);
+    font-size: 1.8rem;
+    transform: rotate(-16deg);
+  }
+}

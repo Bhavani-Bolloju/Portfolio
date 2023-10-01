@@ -1,0 +1,50 @@
+.skills {
+  background-color: var(--color-primary--1);
+  padding: 5rem 20rem;
+  // margin-bottom: -5rem;
+
+  &__container {
+    // background: url("../../assets/home/noise_3.png");
+    background-color: var(--color-primary--1);
+    // padding: 10rem;
+    padding: 5rem 10rem;
+    // border-radius: 5rem;
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 5rem;
+    text-align: center;
+    margin-bottom: -5rem;
+    position: relative;
+    z-index: 10;
+    top: -20%;
+    box-sizing: 0 5px 10px rgba(black, 0.4);
+
+    // padding-bottom: 15rem;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8rem;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      svg {
+        color: var(--color-secondary--2);
+        color: var(--color-tertiary--1);
+        font-size: 5rem;
+      }
+
+      .text {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

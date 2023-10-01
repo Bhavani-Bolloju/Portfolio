@@ -1,0 +1,91 @@
+:root {
+  --color-primary--1: #0d0d0d; //bg
+  --color-primary--2: #121212; //bg
+  --color-primary--3: #2f4f4f; //bg
+
+  --color-secondary--1: #ffffff; //text
+  --color-secondary--2: #d3d3d3; //text
+  --color-secondary--3: #555d50; //text
+
+  //accent
+  --color-tertiary--1: #dc143c;
+
+  --color-icons--1: #ffd700;
+
+  //font-family
+  --font-family--1: "Montserrat", sans-serif;
+
+  //for content and CTS
+  --font-family--2: "Roboto", sans-serif;
+  // --font-family--2: "Source Sans 3", sans-serif;
+
+  //for heading and title -- lato and poppins
+  // --font-family--3: "Lato", sans-serif;
+  --font-family--3: "Poppins", sans-serif;
+
+  //
+
+  // --font-family--5: "Fira Code", monospace;
+  --font-family--5: "Roboto Mono", monospace;
+  // --font-family--5: "Source Code Pro", monospace;
+
+  //only for content
+  --font-family--4: "Nunito", sans-serif;
+
+  //border-radius
+  --border-radius--1: 0.2rem;
+
+  //size
+
+  --heading-secondary: 4.4rem;
+  --heading-tertiary: 3.2rem;
+  --heading-4: 2.6rem;
+  --heading-5: 2.2rem;
+  --margin-lg: 4.8rem;
+  --margin-xl: 5.2rem;
+  --margin-md: 3rem;
+  --margin-sm: 2.4rem;
+  --margin-xs: 1.8rem;
+
+  --line-height--1: 1.8;
+  --line-height--2: 1.6;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-family--4);
+  font-size: 1.6rem;
+}
+
+.dark {
+  // background: url("./assets/home/noise_3.png");
+  background-color: var(--color-primary--1);
+  color: var(--color-secondary--1);
+  background-repeat: repeat;
+}
+
+.productsPage {
+  width: 100%;
+  min-height: 100vh;
+  // background-color: var(--color-primary--1);
+}
+
+.footer {
+  background-color: #0a0a0a;
+  background-color: #dc143c;
+  background-color: #333333;
+  padding: 10rem;
+}
