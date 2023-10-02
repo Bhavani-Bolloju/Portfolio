@@ -1,0 +1,29 @@
+.ProjectPage {
+  width: 80%;
+  margin: auto;
+  padding: 10rem 20rem;
+  position: relative;
+  min-height: 100vh;
+
+  .btn__back {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    top: 5rem;
+    left: 15%;
+    transform: scale(1) translateX(0px);
+    transition: all 0.2s;
+
+    svg {
+      font-size: 3.5rem;
+      display: block;
+      color: var(--color-tertiary--1);
+    }
+
+    &:hover {
+      transform: translateX(-10px) scale(1.1);
+      cursor: pointer;
+    }
+  }
+}

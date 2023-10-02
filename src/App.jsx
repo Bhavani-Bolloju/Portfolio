@@ -10,6 +10,8 @@ import { Route, Routes } from "react-router-dom";
 import OuranosProjectDetail from "./components/projects/ouranos/OuranosProjectDetail";
 import WeatherProjectDetail from "./components/projects/weather/WeatherProjectDetail";
 
+import ShopCartDetailPage from "./components/projects/E-commerce/ShopCartDetailPage";
+
 function App() {
   const [isModeLight, setIsModeLight] = useState(false);
 
@@ -37,6 +39,7 @@ function App() {
         <Route path="/project" element={<ProjectPage />}>
           <Route path="ouranos" element={<OuranosProjectDetail />} />
           <Route path="weather" element={<WeatherProjectDetail />} />
+          <Route path="shopCart" element={<ShopCartDetailPage />} />
         </Route>
         <Route path="/blog" element={<BlogsPage />}></Route>
       </Routes>

@@ -3,7 +3,7 @@ import classes from "./Projects.module.scss";
 import image1 from "../../../assets/project/orpl/ORPL_LS.png";
 import weather1 from "../../../assets/project/weather/weather_LS.png";
 
-import orpl from "../../../assets/project/orpl/ORPL_mockup1.png";
+import shop from "../../../assets/project/e-commerce/shop-cart.png";
 
 import SecondaryHeading from "../../ui/SecondaryHeading";
 import HeadingTertiary from "../../ui/HeadingTertiary";
@@ -12,9 +12,9 @@ import { useNavigate } from "react-router-dom";
 
 import { FaReact, FaSass } from "react-icons/fa";
 
-import { ProjectCard, ProjectCardReverse } from "../../ui/ProjectCard";
+import { ProjectCard } from "../../ui/ProjectCard";
 
-import { ButtonOutline } from "../../ui/ButtonOutline";
+import { ButtonOutline, ButtonLink } from "../../ui/ButtonOutline";
 
 function Projects() {
   const navigate = useNavigate();
@@ -51,7 +51,9 @@ function Projects() {
                 >
                   read more
                 </ButtonOutline>
-                <ButtonOutline>git hub</ButtonOutline>
+                <ButtonLink link="https://github.com/Bhavani-Bolloju/Ouranos-Project-website">
+                  git hub
+                </ButtonLink>
               </div>
             </div>
           </ProjectCard>
@@ -87,6 +89,39 @@ function Projects() {
             </div>
             <div className={classes["project__image"]}>
               <img src={weather1} alt="" />
+            </div>
+          </ProjectCard>
+        </div>
+        <div className={classes["project"]}>
+          <ProjectCard>
+            <div className={classes["project__image"]}>
+              <img src={shop} alt="" />
+            </div>
+            <div className={classes["project__content"]}>
+              <HeadingTertiary className={classes["project__title"]}>
+                03. Shop Cart
+              </HeadingTertiary>
+              <p className={classes["project__text"]}>
+                Developed a fully responsive e-commerce website that seamlessly
+                integrates data from an open-source API. Key features include
+                robust user authentication, detailed product pages, efficient
+                product category filtering, and convenient cart management. My
+                goal was to create a user-centric online shopping experience.
+              </p>
+              <div className={classes["project__stack"]}>
+                <FaReact></FaReact>
+                <FaSass></FaSass>
+              </div>
+              <div className={classes.btns}>
+                <ButtonOutline
+                  onClick={() => {
+                    navigate("/project/shopCart");
+                  }}
+                >
+                  read more
+                </ButtonOutline>
+                <ButtonOutline>git hub</ButtonOutline>
+              </div>
             </div>
           </ProjectCard>
         </div>

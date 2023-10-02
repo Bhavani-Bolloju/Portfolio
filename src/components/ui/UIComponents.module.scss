@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  .content {
+    line-height: var(--line-height--2);
+    margin-left: 3rem;
+    &::before {
+      content: "\f105";
+      content: "◆";
+      color: var(--color-tertiary--1);
+      font-size: 1.8rem;
+      position: absolute;
+      left: -0%;
+    }
+  }
+}

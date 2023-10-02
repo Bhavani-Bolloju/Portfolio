@@ -12,6 +12,18 @@ export function ButtonOutline(props) {
   );
 }
 
+export function ButtonLink(props) {
+  return (
+    <a
+      href={props.link}
+      className={`${classes.btn} ${classes["btn__link"]}`}
+      target="_blank"
+    >
+      {props.children}
+    </a>
+  );
+}
+
 export function ButtonPrimary(props) {
   return (
     <button

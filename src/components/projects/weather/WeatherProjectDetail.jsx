@@ -1,7 +1,8 @@
 import React from "react";
+import classes from "./WeatherProjectDetail.module.scss";
 
 function WeatherProjectDetail() {
-  return <div>weather app</div>;
+  return <section>weather app</section>;
 }
 
 export default WeatherProjectDetail;

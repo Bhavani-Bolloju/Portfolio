@@ -29,4 +29,15 @@
       background-color: transparent;
     }
   }
+
+  &__link {
+    text-transform: capitalize;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-tertiary--1);
+    }
+  }
 }
