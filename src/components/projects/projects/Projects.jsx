@@ -84,7 +84,9 @@ function Projects() {
                 >
                   read more
                 </ButtonOutline>
-                <ButtonOutline>git hub</ButtonOutline>
+                <ButtonLink link="https://github.com/Bhavani-Bolloju">
+                  git hub
+                </ButtonLink>
               </div>
             </div>
             <div className={classes["project__image"]}>
