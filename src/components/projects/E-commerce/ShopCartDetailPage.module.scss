@@ -1,5 +1,6 @@
 .shopCart {
   font-size: 1.8rem;
+  padding-bottom: 10rem;
 
   h2 {
     text-align: center;
@@ -96,5 +97,11 @@
       height: 100%;
       border-radius: 0.5rem;
     }
+  }
+
+  .btns {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
   }
 }

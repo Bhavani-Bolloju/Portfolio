@@ -3,8 +3,16 @@ import classes from "./ShopCartDetailPage.module.scss";
 
 import shopCart1 from "../../../assets/project/e-commerce/shopcart1.png";
 import shopCart2 from "../../../assets/project/e-commerce/shopcart2.png";
-import code from "../../../assets/project/e-commerce/code_snippet.png";
 import productList from "../../../assets/project/e-commerce/productList.png";
+import filterImage from "../../../assets/project/e-commerce/products_filter.png";
+
+import savedItems from "../../../assets/project/e-commerce/save_items.png";
+
+import cartItems from "../../../assets/project/e-commerce/cart_items.png";
+
+import userAuth from "../../../assets/project/e-commerce/user_authentication.png";
+
+import detailsPage from "../../../assets/project/e-commerce/detail_page.png";
 
 import HeadingTertiary from "../../ui/HeadingTertiary";
 import SecondaryHeading from "../../ui/SecondaryHeading";
@@ -12,6 +20,8 @@ import SecondaryHeading from "../../ui/SecondaryHeading";
 import { SubtitleHeading, SupportingHeading } from "../../ui/Headings";
 
 import { Item } from "../../ui/UIComponents";
+
+import { ButtonLink } from "../../ui/ButtonOutline";
 
 function ShopCartDetailPage() {
   return (
@@ -65,22 +75,37 @@ function ShopCartDetailPage() {
             <span className={classes.highlight}>Product Filtering: </span>
             Easily find products by filtering based on different categories.
           </Item>
+          <div className={classes.images}>
+            <img src={filterImage} alt="" />
+          </div>
           <Item>
             <span className={classes.highlight}>Save Items for Later: </span>
             Save selected items to revisit later.
           </Item>
+          <div className={classes.images}>
+            <img src={savedItems} alt="" />
+          </div>
           <Item>
             <span className={classes.highlight}>Shopping Cart: </span>
             Add and manage items in the cart.
           </Item>
+          <div className={classes.images}>
+            <img src={cartItems} alt="" />
+          </div>
           <Item>
             <span className={classes.highlight}>User Authentication: </span>
             Secure user registration for personalized shopping.
           </Item>
+          <div className={classes.images}>
+            <img src={userAuth} alt="" />
+          </div>
           <Item>
             <span className={classes.highlight}> Detailed Product Pages: </span>
             View detailed product information and images.
           </Item>
+          <div className={classes.images}>
+            <img src={detailsPage} alt="" />
+          </div>
         </ul>
       </div>
       <div className={classes.technologies}>
@@ -238,6 +263,10 @@ function ShopCartDetailPage() {
             </Item>
           </ul>
         </div>
+      </div>
+      <div className={classes.btns}>
+        <ButtonLink>Live Demo</ButtonLink>
+        <ButtonLink>GitHub</ButtonLink>
       </div>
     </section>
   );
