@@ -8,8 +8,15 @@
   .overview,
   .features,
   .technologies,
-  .challenges {
+  .challenges,
+  .enhancements {
     margin-bottom: 5rem;
+  }
+
+  .enhancements div {
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
   }
 
   .images {
@@ -60,5 +67,12 @@
         display: inline-block;
       }
     }
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
   }
 }

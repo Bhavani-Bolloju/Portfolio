@@ -7,6 +7,8 @@ import HeadingTertiary from "../../ui/HeadingTertiary";
 import { Item } from "../../ui/UIComponents";
 import { SubtitleHeading, SupportingHeading } from "../../ui/Headings";
 
+import { ButtonLink } from "../../ui/ButtonOutline";
+
 function WeatherProjectDetail() {
   return (
     <section className={classes.weatherDetailPage}>
@@ -116,11 +118,66 @@ function WeatherProjectDetail() {
           </ul>
         </div>
       </div>
-      <div>
+      <div className={classes.enhancements}>
         <HeadingTertiary>future enhancements</HeadingTertiary>
+        <div>
+          <SubtitleHeading>01. City-Specific Weather Search</SubtitleHeading>
+          <SupportingHeading>Description:</SupportingHeading>
+          <p>
+            In my ongoing commitment to enhancing the weather app, I'm planning
+            an exciting feature. This upcoming addition will enable users to
+            explore weather data for cities worldwide, allowing access to
+            real-time, daily, and hourly weather information.
+          </p>
+          <SupportingHeading>Key components:</SupportingHeading>
+          <ul>
+            <Item>
+              A search bar will be placed within the app, allowing users to
+              enter the name or location of the city they want to explore.
+            </Item>
+            <Item>
+              Upon entering a city's name or location, the app will fetch and
+              display a wealth of weather data, including current conditions,
+              hourly forecasts, and daily outlooks.
+            </Item>
+            <Item>
+              This feature guarantees that users can stay updated on weather
+              conditions worldwide.
+            </Item>
+          </ul>
+        </div>
+        <div>
+          <SubtitleHeading>02. Tabular Hourly Weather Data</SubtitleHeading>
+          <SupportingHeading>Description:</SupportingHeading>
+          <p>
+            I'm planning to introduce a tabular display of hourly weather data.
+            This enhancement aims to enhance user-friendliness, especially for
+            those using smaller screens like mobile devices.
+          </p>
+          <SupportingHeading>Key components:</SupportingHeading>
+          <ul>
+            <Item>
+              The tabular format will give users a clear and easy way to see
+              hourly weather forecasts. Users can quickly find the information
+              they're looking for.
+            </Item>
+            <Item>
+              Users will have access to visual icons and detailed information
+              for each hourly weather forecast, including temperature,
+              precipitation, wind speed, and more.
+            </Item>
+          </ul>
+        </div>
       </div>
 
-      <div>links to live deme and github</div>
+      <div className={classes.btns}>
+        <ButtonLink link="https://user-authentication-e7794.web.app/">
+          Live Demo
+        </ButtonLink>
+        <ButtonLink link="https://github.com/Bhavani-Bolloju/Weather-App">
+          Github
+        </ButtonLink>
+      </div>
     </section>
   );
 }

@@ -2,16 +2,16 @@
   padding: 2rem 0;
   position: fixed;
   z-index: 20000;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
-  right: 2%;
+  left: 0.5%;
 }
 
 .nav-items {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: end;
+  // align-items: end;
   gap: 1rem;
 
   a {
@@ -26,11 +26,14 @@
     color: var(--color-tertiary--1);
     transition: all 0.3s;
 
-    &::after {
+    &::before {
       content: "";
       display: block;
-      width: 2rem;
+      width: 1rem;
       height: 1px;
+      // width: 0.5rem;
+      // height: 0.5rem;
+
       border-radius: 50%;
       background-color: var(--color-tertiary--1);
     }
@@ -42,6 +45,6 @@
   }
   .active {
     color: var(--color-secondary--2);
-    transform: translateX(-1.5rem) scale(1.05);
+    transform: translateX(1rem) scale(1.05);
   }
 }
