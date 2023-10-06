@@ -1,4 +1,80 @@
 .footer {
-  padding: 20rem 0;
+  padding: 10rem 20rem;
   background-color: var(--color-primary--1);
+
+  h4 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+  &__top {
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__intro {
+    flex-basis: 60%;
+
+    &--text {
+      line-height: 1.8;
+
+      span {
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          border-color: var(--color-secondary--3);
+        }
+      }
+    }
+  }
+  &__social-links {
+    div {
+      display: flex;
+      gap: 2.5rem;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      svg {
+        &:hover {
+          color: var(--color-tertiary--1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__copyrights {
+    text-align: center;
+    border-top: 1px solid var(--color-secondary--3);
+    padding-top: 3rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-family: var(--font-family--4);
+    font-weight: 300;
+    span {
+      &:not(:last-child) {
+        padding-right: 1rem;
+        border-right: 1px solid var(--color-secondary--3);
+      }
+    }
+  }
+
+  .highlight {
+    font-size: 1.6rem;
+    color: var(--color-tertiary--1);
+  }
 }
+
+// <div class="footer__intro">
+//   <h2>About Me</h2>
+//   <p>Hello there! I'm [Your Name], a passionate front-end developer with a knack for turning ideas into interactive and visually appealing web experiences.</p>
+//   <p>My journey in the world of web development began [mention how you got started, your background, or any defining moments]. Since then, I've been on a mission to create pixel-perfect, responsive websites that not only look stunning but also deliver seamless user experiences.</p>
+//   <p>My skills encompass a wide range of front-end technologies, including HTML, CSS, JavaScript, and modern frameworks like React. I'm always eager to learn and stay updated with the latest trends in web development to bring fresh and innovative solutions to the table.</p>
+//   <p>When I'm not coding, you'll find me [mention any hobbies or interests outside of coding]. Feel free to connect with me on [your preferred social media platforms] or drop me a message at [your contact email]. Let's collaborate and bring your web projects to life!</p>
+// </div>
