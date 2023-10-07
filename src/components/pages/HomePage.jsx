@@ -5,7 +5,7 @@ import About from "../about/About";
 import Projects from "../projects/projects/Projects";
 import Footer from "../footer/Footer";
 import Skills from "../skills/Skills";
-import Contact from "../contact/Contact";
+import Contact from "../contact/Recommendation";
 
 function HomePage() {
   return (

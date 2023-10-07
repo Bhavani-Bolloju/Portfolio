@@ -1,0 +1,62 @@
+.recommendation {
+  padding: 15rem 20rem;
+  // background-color: var(--color-primary--2);
+  background: url("../../assets/home//pattern_1.svg");
+  text-align: center;
+
+  .container {
+    width: 60%;
+    margin: auto;
+    position: relative;
+
+    svg {
+      position: absolute;
+      font-size: 6rem;
+      fill: var(--color-secondary--3);
+      opacity: 0.5;
+    }
+    .left {
+      left: -8%;
+      top: -20%;
+    }
+
+    .right {
+      bottom: -10%;
+      right: -5%;
+    }
+  }
+
+  blockquote {
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+
+  h3 {
+    margin-bottom: 8rem;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    color: var(--color-secondary--2);
+    gap: 0.5rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .company {
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+
+  .position {
+    font-size: 1.4rem;
+  }
+
+  .CTA {
+    margin-top: 5rem;
+  }
+}

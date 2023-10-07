@@ -48,24 +48,14 @@ function Header() {
         </Link>
         <Link
           activeClass={classes["active"]}
-          to="contact"
+          to="footer"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-500}
           duration={700}
         >
-          contact
+          footer
         </Link>
-        {/* <Link
-            activeClass={classes["active"]}
-            to="footer"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={700}
-          >
-            footer
-          </Link> */}
       </nav>
     </header>
   );
