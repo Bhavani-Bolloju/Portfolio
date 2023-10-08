@@ -28,16 +28,8 @@ function Home() {
           <ButtonPrimary>Download CV</ButtonPrimary>
           <ButtonPrimary>View My Work</ButtonPrimary>
         </div>
-        {/* <div className={classes.icons}>
-          <AiFillLinkedin />
-          <AiFillGithub />
-        </div> */}
       </div>
       <div className={classes.bar}></div>
-      {/* <span className={classes.html}> &#60;html&#62; </span>
-      <span className={classes.html2}> &#60;html\&#62; </span>
-      <div className={classes.circle}></div>
-      <div className={classes.circle2}></div> */}
     </section>
   );
 }

@@ -24,13 +24,16 @@ function Footer() {
         <div className={classes["footer__social-links"]}>
           <SubtitleHeading>social</SubtitleHeading>
           <div>
-            <a href="">
+            <a href="https://github.com/Bhavani-Bolloju" target="_blank">
               <SiGithub />
             </a>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/bhavani-bolloju-9ba34b241/"
+              target="_blank"
+            >
               <SiLinkedin />
             </a>
-            <a href="">
+            <a href="https://bhavanibolloju.substack.com/" target="_blank">
               <SiSubstack />
             </a>
           </div>

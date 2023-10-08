@@ -3,6 +3,8 @@ import classes from "./Header.module.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 import logo from "../../assets/home/Full-logo.svg";
 
+import { SiSubstack, SiLinkedin, SiGithub } from "react-icons/si";
+
 function Header() {
   const [showHeader, setShowHeader] = useState(false);
 
@@ -81,6 +83,20 @@ function Header() {
           footer
         </Link>
       </nav>
+      <div className={classes["social-link"]}>
+        <a href="https://github.com/Bhavani-Bolloju" target="_blank">
+          <SiGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/bhavani-bolloju-9ba34b241/"
+          target="_blank"
+        >
+          <SiLinkedin />
+        </a>
+        <a href="https://bhavanibolloju.substack.com/" target="_blank">
+          <SiSubstack />
+        </a>
+      </div>
     </header>
   );
 }
