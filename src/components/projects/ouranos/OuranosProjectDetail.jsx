@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import classes from "./OuranosProjectDetail.module.scss";
-import { animateScroll as scroll } from "react-scroll";
 
 import SecondaryHeading from "../../ui/SecondaryHeading";
 import HeadingTertiary from "../../ui/HeadingTertiary";
@@ -20,8 +19,6 @@ import products from "../../../assets/project/orpl/ORPL_products-page.png";
 
 import cart from "../../../assets/project/orpl/cart.png";
 
-import { ButtonPrimary } from "../../ui/ButtonOutline";
-
 import { Item } from "../../ui/UIComponents";
 
 import productList from "../../../assets/project/orpl/ProductList.png";
@@ -33,9 +30,6 @@ import detailPage2 from "../../../assets/project/orpl/userInteraction2.png";
 import { ButtonLink } from "../../ui/ButtonOutline";
 
 function OuranosProjectDetail() {
-  useEffect(() => {
-    // scroll.scrollToTop();
-  }, []);
   return (
     <section className={classes.project}>
       <SecondaryHeading>Ouranos robotics</SecondaryHeading>
@@ -166,13 +160,6 @@ function OuranosProjectDetail() {
             Implement secure authentication systems for user data protection and
             exclusive features.
           </Item>
-          {/* 
-          <Item>
-            Ensure seamless functionality across various web browsers through
-            extensive testing.
-          </Item> */}
-
-          {/* <Item>Optimize load times and improve overall site performance.</Item> */}
 
           <Item>
             Utilize modern frameworks and libraries for streamlined development
