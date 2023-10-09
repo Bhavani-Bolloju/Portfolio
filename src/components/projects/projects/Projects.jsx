@@ -3,7 +3,7 @@ import classes from "./Projects.module.scss";
 import image1 from "../../../assets/project/orpl/ORPL_LS.png";
 import weather1 from "../../../assets/project/weather/weather_LS.png";
 
-import shop from "../../../assets/project/e-commerce/shop-cart.png";
+import shop from "../../../assets/project/e-commerce/shopcart1.png";
 
 import SecondaryHeading from "../../ui/SecondaryHeading";
 import HeadingTertiary from "../../ui/HeadingTertiary";

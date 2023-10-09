@@ -1,21 +1,19 @@
 .about {
-  background-color: var(--color-primary--1);
-  // background-color: var(00);
-  padding: 5rem 28rem;
-
   font-size: 2rem;
-  font-weight: 300;
   position: relative;
   text-align: center;
-  padding-top: 15rem;
-
   display: flex;
   flex-direction: column;
-
   justify-content: center;
-
-  .title {
-    flex-basis: 30%;
+  padding: 10rem 28rem;
+  @media screen and (max-width: 1250px) {
+    padding: 10rem 15rem;
+  }
+  @media screen and (max-width: 950px) {
+    padding: 5rem 10rem;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 5rem;
   }
 
   p {

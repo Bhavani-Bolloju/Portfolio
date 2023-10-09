@@ -1,11 +1,28 @@
 .recommendation {
-  padding: 15rem 20rem;
-  // background-color: var(--color-primary--2);
-  background: url("../../assets/home//pattern_1.svg");
+  padding: 10rem 20rem;
+  background: url("../../assets/home/pattern_2.svg");
   text-align: center;
 
+  @media screen and (max-width: 1250px) {
+    padding: 10rem 15rem;
+  }
+
+  @media screen and (max-width: 950px) {
+    padding: 5rem 10rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 5rem;
+  }
   .container {
     width: 60%;
+
+    @media screen and (max-width: 950px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 600px) {
+      width: 90%;
+    }
     margin: auto;
     position: relative;
 

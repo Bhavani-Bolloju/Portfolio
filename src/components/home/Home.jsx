@@ -1,13 +1,7 @@
 import React from "react";
 import classes from "./Home.module.scss";
-// import image2 from "../../assets/home/image-2.jpg";
-import { ButtonOutline, ButtonPrimary } from "../ui/ButtonOutline";
 
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-
-// import waterColor from "../../assets/home/water-color.jpg";
-// import patter from "../../assets/home/noise_1.png";
-// import granula from "../../assets/home/granula.jpg";
+import { ButtonPrimary } from "../ui/ButtonOutline";
 
 function Home() {
   return (
@@ -29,7 +23,7 @@ function Home() {
           <ButtonPrimary>View My Work</ButtonPrimary>
         </div>
       </div>
-      <div className={classes.bar}></div>
+      {/* <div className={classes.bar}></div> */}
     </section>
   );
 }

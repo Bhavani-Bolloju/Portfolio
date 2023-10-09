@@ -6,4 +6,8 @@
   color: var(--color-tertiary--1);
   text-transform: uppercase;
   margin-bottom: var(--margin-lg);
+
+  @media screen and (max-width: 650px) {
+    margin-bottom: var(--margin-md);
+  }
 }

@@ -60,26 +60,21 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; //10px*100/16
   height: 100%;
   width: 100%;
+
+  @media screen and (max-width: 1250px) {
+    font-size: 56.25%;
+  }
+  @media screen and (max-width: 950px) {
+    font-size: 50%;
+  }
 }
 
 body {
   font-family: var(--font-family--4);
   font-size: 1.6rem;
-}
-
-.dark {
-  // background: url("./assets/home/noise_3.png");
-  background-color: var(--color-primary--1);
   color: var(--color-secondary--1);
-  background-repeat: repeat;
-}
-
-.footer {
-  background-color: #0a0a0a;
-  background-color: #dc143c;
-  background-color: #333333;
-  padding: 10rem;
+  background-color: var(--color-primary--1);
 }

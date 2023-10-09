@@ -1,24 +1,21 @@
 .skills {
   background-color: var(--color-primary--1);
-  padding: 5rem 20rem;
-  // margin-bottom: -5rem;
+  padding: 10rem 28rem;
+
+  @media screen and (max-width: 1250px) {
+    padding: 10rem 15rem;
+  }
+
+  @media screen and (max-width: 950px) {
+    padding: 5rem 10rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 5rem;
+  }
 
   &__container {
-    // background: url("../../assets/home/noise_3.png");
-    background-color: var(--color-primary--1);
-    // padding: 10rem;
-    padding: 5rem 10rem;
-    // border-radius: 5rem;
-    border-top-right-radius: 5rem;
-    border-top-left-radius: 5rem;
     text-align: center;
-    margin-bottom: -5rem;
-    position: relative;
-    z-index: 10;
-    top: -20%;
-    box-sizing: 0 5px 10px rgba(black, 0.4);
-
-    // padding-bottom: 15rem;
   }
 
   ul {
@@ -33,17 +30,21 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      width: 10%;
 
       svg {
         color: var(--color-secondary--2);
         color: var(--color-tertiary--1);
-        font-size: 5rem;
+        width: 50%;
+        height: auto;
       }
 
       .text {
         font-size: 1.6rem;
         text-transform: capitalize;
+        text-wrap: nowrap;
       }
     }
   }
