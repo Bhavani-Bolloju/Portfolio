@@ -167,10 +167,10 @@ function WeatherProjectDetail() {
       </div>
 
       <div className={classes.btns}>
-        <ButtonLink link="https://user-authentication-e7794.web.app/">
+        <ButtonLink href="https://user-authentication-e7794.web.app/">
           Live Demo
         </ButtonLink>
-        <ButtonLink link="https://github.com/Bhavani-Bolloju/Weather-App">
+        <ButtonLink href="https://github.com/Bhavani-Bolloju/Weather-App">
           Github
         </ButtonLink>
       </div>

@@ -371,10 +371,10 @@ function OuranosProjectDetail() {
         </ul>
       </div>
       <div className={classes.btns}>
-        <ButtonLink link="https://orpl---finalproject.web.app/">
+        <ButtonLink href="https://orpl---finalproject.web.app/">
           Live Demo
         </ButtonLink>
-        <ButtonLink link="https://github.com/Bhavani-Bolloju/Ouranos-Project-website">
+        <ButtonLink href="https://github.com/Bhavani-Bolloju/Ouranos-Project-website">
           Github
         </ButtonLink>
       </div>

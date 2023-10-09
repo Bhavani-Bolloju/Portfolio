@@ -260,8 +260,12 @@ function ShopCartDetailPage() {
         </div>
       </div>
       <div className={classes.btns}>
-        <ButtonLink>Live Demo</ButtonLink>
-        <ButtonLink>GitHub</ButtonLink>
+        <ButtonLink href="https://e-commerce-ac3a5.web.app/">
+          Live Demo
+        </ButtonLink>
+        <ButtonLink href="https://github.com/Bhavani-Bolloju/E-commerce">
+          GitHub
+        </ButtonLink>
       </div>
     </section>
   );
