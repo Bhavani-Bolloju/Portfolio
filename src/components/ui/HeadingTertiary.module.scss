@@ -2,8 +2,11 @@
   font-size: var(--heading-tertiary);
   font-family: var(--font-family--3);
   color: var(--color-tertiary--1);
-  // font-weight: 600;
   font-weight: 500;
   text-transform: capitalize;
-  margin-bottom: var(--margin-md);
+  margin-bottom: var(--margin-xs);
+
+  @media screen and (max-width: 1000px) {
+    font-size: var(--heading-4);
+  }
 }

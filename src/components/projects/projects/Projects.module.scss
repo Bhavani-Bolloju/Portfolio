@@ -9,20 +9,32 @@
   @media screen and (max-width: 1250px) {
     padding: 10rem 15rem;
   }
+  @media screen and (max-width: 950px) {
+    padding: 10rem;
+  }
 }
 
 .project {
   position: relative;
+  overflow: hidden;
+
+  & > h3 {
+    @media screen and (min-width: 700px) {
+      display: none;
+    }
+  }
 
   &:not(:last-child) {
     padding-bottom: 8rem;
+    @media screen and (max-width: 700px) {
+      padding-bottom: 5rem;
+    }
   }
 
   &__image {
-    min-width: 60%;
     height: auto;
     flex-grow: 1;
-    flex-basis: 70%;
+
     overflow: hidden;
     border-radius: 0.5rem;
     background-color: #fff;
@@ -44,13 +56,46 @@
 
   &__content {
     flex-basis: 100%;
-    width: 100%;
+    min-width: 40%;
     text-align: start;
     position: relative;
     z-index: 1000;
+    flex-shrink: 1;
     &--line {
       display: flex;
       gap: 1rem;
+    }
+
+    @media screen and (max-width: 900px) and (min-width: 700px) {
+      position: absolute;
+      padding: 2rem 15rem;
+      width: 100%;
+      min-height: fit-content;
+      background: linear-gradient(to bottom right, #121212, #dc143c);
+      transform: translateX(-100%);
+      transition: all 0.3s;
+    }
+
+    @media screen and (max-width: 800px) and (min-width: 700px) {
+      padding: 2rem 5rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      h3 {
+        display: none;
+      }
+    }
+  }
+
+  &:hover &__content {
+    @media screen and (max-width: 900px) {
+      transform: translateX(0%);
+    }
+  }
+
+  &:hover &__image {
+    img {
+      transform: scale(1.1);
     }
   }
 
@@ -79,10 +124,22 @@
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
+  width: 100%;
 
   button,
   a {
     padding: 0.5rem 2rem;
     text-transform: capitalize;
+  }
+
+  @media screen and (max-width: 700px) {
+    justify-content: center;
+
+    button,
+    a {
+      width: 80%;
+      text-align: center;
+      padding: 1rem 3rem;
+    }
   }
 }

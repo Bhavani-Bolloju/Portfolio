@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 import { FaReact, FaSass } from "react-icons/fa";
 
-import { ProjectCard } from "../../ui/ProjectCard";
+import { ProjectCard, ProjectCardReverse } from "../../ui/ProjectCard";
 
 import { ButtonOutline, ButtonLink } from "../../ui/ButtonOutline";
 
@@ -24,6 +24,9 @@ function Projects() {
       <SecondaryHeading>My projects</SecondaryHeading>
       <div className={classes["projects__container"]}>
         <div className={classes["project"]}>
+          <HeadingTertiary className={classes["project__title"]}>
+            01. oranous robotics
+          </HeadingTertiary>
           <ProjectCard>
             <div className={classes["project__image"]}>
               <img src={image1} alt="" />
@@ -59,7 +62,13 @@ function Projects() {
           </ProjectCard>
         </div>
         <div className={classes["project"]}>
-          <ProjectCard>
+          <HeadingTertiary className={classes["project__title"]}>
+            02. Daily Weather
+          </HeadingTertiary>
+          <ProjectCardReverse>
+            <div className={classes["project__image"]}>
+              <img src={weather1} alt="" />
+            </div>
             <div className={classes["project__content"]}>
               <HeadingTertiary className={classes["project__title"]}>
                 02. Daily Weather
@@ -89,12 +98,12 @@ function Projects() {
                 </ButtonLink>
               </div>
             </div>
-            <div className={classes["project__image"]}>
-              <img src={weather1} alt="" />
-            </div>
-          </ProjectCard>
+          </ProjectCardReverse>
         </div>
         <div className={classes["project"]}>
+          <HeadingTertiary className={classes["project__title"]}>
+            03. Shop Cart
+          </HeadingTertiary>
           <ProjectCard>
             <div className={classes["project__image"]}>
               <img src={shop} alt="" />
