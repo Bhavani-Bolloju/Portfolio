@@ -29,7 +29,7 @@ function Recommendation() {
         </div>
 
         <div className={classes.CTA}>
-          <ButtonLink link="https://drive.google.com/file/d/12xXpMVy_cAr_Y5t4am7GNtX3l6wT9JYn/view?usp=sharing">
+          <ButtonLink href="https://drive.google.com/file/d/12xXpMVy_cAr_Y5t4am7GNtX3l6wT9JYn/view?usp=sharing">
             Read letter
           </ButtonLink>
         </div>

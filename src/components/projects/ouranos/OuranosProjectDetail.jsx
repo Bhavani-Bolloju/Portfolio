@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import classes from "./OuranosProjectDetail.module.scss";
 
 import SecondaryHeading from "../../ui/SecondaryHeading";
@@ -28,15 +28,14 @@ import blog2 from "../../../assets/project/orpl/blog_2.png";
 import detailPage1 from "../../../assets/project/orpl/userInteraction1.png";
 import detailPage2 from "../../../assets/project/orpl/userInteraction2.png";
 import { ButtonLink } from "../../ui/ButtonOutline";
+import ImagesContainer from "../../ui/ImagesContainer";
 
 function OuranosProjectDetail() {
   return (
     <section className={classes.project}>
       <SecondaryHeading>Ouranos robotics</SecondaryHeading>
-      <div className={classes.images}>
-        <img src={image1} alt="" className={classes.image1} />
-        <img src={image2} alt="" className={classes.image2} />
-      </div>
+      <ImagesContainer image1={image1} image2={image2}></ImagesContainer>
+
       <div className={classes["project__overview"]}>
         <HeadingTertiary>Project overview</HeadingTertiary>
         <ul className={classes.list}>

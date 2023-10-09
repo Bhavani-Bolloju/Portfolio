@@ -1,7 +1,11 @@
 import React from "react";
 import classes from "./Home.module.scss";
 
-import { ButtonPrimary } from "../ui/ButtonOutline";
+import { ButtonPrimary, ButtonLink } from "../ui/ButtonOutline";
+
+import resume from "../../assets/home/Bhavani_Bolloju_WE.pdf";
+
+import { Link } from "react-scroll";
 
 function Home() {
   return (
@@ -19,8 +23,19 @@ function Home() {
           veggie burger. Welcome to my portfolio.
         </p>
         <div className={classes.btns}>
-          <ButtonPrimary>Download CV</ButtonPrimary>
-          <ButtonPrimary>View My Work</ButtonPrimary>
+          <ButtonLink href={resume} download="Bhavani-CV.pdf">
+            Download CV
+          </ButtonLink>
+          <Link
+            activeClass={classes["active"]}
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={700}
+          >
+            View my work
+          </Link>
         </div>
       </div>
       {/* <div className={classes.bar}></div> */}

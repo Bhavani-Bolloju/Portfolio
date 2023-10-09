@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./ShopCartDetailPage.module.scss";
 
-import shopCart1 from "../../../assets/project/e-commerce/shopcart1.png";
+import shopCart1 from "../../../assets/project/e-commerce/shop-cart_LS.png";
 import shopCart2 from "../../../assets/project/e-commerce/shopcart2.png";
 import productList from "../../../assets/project/e-commerce/productList.png";
 import filterImage from "../../../assets/project/e-commerce/products_filter.png";
@@ -22,19 +22,14 @@ import { SubtitleHeading, SupportingHeading } from "../../ui/Headings";
 import { Item } from "../../ui/UIComponents";
 
 import { ButtonLink } from "../../ui/ButtonOutline";
+import ImagesContainer from "../../ui/ImagesContainer";
 
 function ShopCartDetailPage() {
   return (
     <section className={classes["shopCart"]}>
       <SecondaryHeading>shop cart</SecondaryHeading>
-      <div className={classes.images}>
-        <div className={classes.image1}>
-          <img src={shopCart1} alt="" />
-        </div>
-        <div className={classes.image2}>
-          <img src={shopCart2} alt="" />
-        </div>
-      </div>
+      <ImagesContainer image1={shopCart1} image2={shopCart2} />
+
       <div className={classes.overview}>
         <HeadingTertiary>Project Overview</HeadingTertiary>
         <ul>

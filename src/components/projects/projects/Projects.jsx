@@ -3,7 +3,7 @@ import classes from "./Projects.module.scss";
 import image1 from "../../../assets/project/orpl/ORPL_LS.png";
 import weather1 from "../../../assets/project/weather/weather_LS.png";
 
-import shop from "../../../assets/project/e-commerce/shopcart1.png";
+import shop from "../../../assets/project/e-commerce/shop-cart_LS.png";
 
 import SecondaryHeading from "../../ui/SecondaryHeading";
 import HeadingTertiary from "../../ui/HeadingTertiary";
@@ -54,7 +54,7 @@ function Projects() {
                 >
                   read more
                 </ButtonOutline>
-                <ButtonLink link="https://github.com/Bhavani-Bolloju/Ouranos-Project-website">
+                <ButtonLink href="https://github.com/Bhavani-Bolloju/Ouranos-Project-website">
                   git hub
                 </ButtonLink>
               </div>
@@ -93,7 +93,7 @@ function Projects() {
                 >
                   read more
                 </ButtonOutline>
-                <ButtonLink link="https://github.com/Bhavani-Bolloju">
+                <ButtonLink href="https://github.com/Bhavani-Bolloju">
                   git hub
                 </ButtonLink>
               </div>
@@ -131,7 +131,9 @@ function Projects() {
                 >
                   read more
                 </ButtonOutline>
-                <ButtonOutline>git hub</ButtonOutline>
+                <ButtonLink href="https://github.com/Bhavani-Bolloju/E-commerce">
+                  git hub
+                </ButtonLink>
               </div>
             </div>
           </ProjectCard>

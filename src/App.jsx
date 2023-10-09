@@ -12,6 +12,8 @@ import WeatherProjectDetail from "./components/projects/weather/WeatherProjectDe
 
 import ShopCartDetailPage from "./components/projects/E-commerce/ShopCartDetailPage";
 
+import CustomCursor from "./components/ui/CustomCursor";
+
 function App() {
   const [isModeLight, setIsModeLight] = useState(false);
 
@@ -34,6 +36,7 @@ function App() {
 
   return (
     <div className="dark">
+      <CustomCursor></CustomCursor>
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/project" element={<ProjectPage />}>

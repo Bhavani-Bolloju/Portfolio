@@ -5,6 +5,18 @@
   position: relative;
   min-height: 100vh;
 
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+    padding: 8rem 15rem;
+  }
+  @media screen and (max-width: 750px) {
+    padding: 8rem 10rem;
+  }
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    padding: 8rem 0;
+  }
+
   .btn__back {
     outline: none;
     background-color: transparent;
@@ -14,6 +26,11 @@
     left: 15%;
     transform: scale(1) translateX(0px);
     transition: all 0.2s;
+
+    @media screen and (max-width: 600px) {
+      top: 2%;
+      left: 5%;
+    }
 
     svg {
       font-size: 3.5rem;

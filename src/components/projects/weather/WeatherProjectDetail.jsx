@@ -7,20 +7,16 @@ import HeadingTertiary from "../../ui/HeadingTertiary";
 import { Item } from "../../ui/UIComponents";
 import { SubtitleHeading, SupportingHeading } from "../../ui/Headings";
 
+import ImagesContainer from "../../ui/ImagesContainer";
+
 import { ButtonLink } from "../../ui/ButtonOutline";
 
 function WeatherProjectDetail() {
   return (
     <section className={classes.weatherDetailPage}>
       <SecondaryHeading>Weather App</SecondaryHeading>
-      <div className={classes.images}>
-        <div className={classes.image1}>
-          <img src={weather1} alt="" />
-        </div>
-        <div className={classes.image2}>
-          <img src={weather2} alt="" />
-        </div>
-      </div>
+      <ImagesContainer image1={weather1} image2={weather2} />
+
       <div className={classes.overview}>
         <HeadingTertiary>Project overview</HeadingTertiary>
         <ul>

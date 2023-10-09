@@ -9,8 +9,9 @@
   @media screen and (max-width: 950px) {
     padding: 5rem 10rem;
   }
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 600px) {
     padding: 5rem;
+    text-align: center;
   }
 
   h4 {
@@ -47,7 +48,7 @@
         transition: all 0.3s;
 
         &:hover {
-          cursor: pointer;
+          cursor: none;
           border-color: var(--color-secondary--3);
         }
       }
@@ -64,7 +65,7 @@
       svg {
         &:hover {
           color: var(--color-tertiary--1);
-          cursor: pointer;
+          cursor: none;
         }
       }
     }
@@ -80,10 +81,25 @@
     gap: 1rem;
     font-family: var(--font-family--4);
     font-weight: 300;
+    flex-wrap: wrap;
+
     span {
       &:not(:last-child) {
         padding-right: 1rem;
         border-right: 1px solid var(--color-secondary--3);
+        @media screen and (max-width: 500px) {
+          border: none;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        &:first-child {
+          border-right: 1px solid var(--color-secondary--3);
+        }
+        &:last-child {
+          flex-grow: 1;
+          width: 100%;
+        }
       }
     }
   }

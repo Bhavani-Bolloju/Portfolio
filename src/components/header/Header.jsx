@@ -162,8 +162,9 @@ function Header() {
           smooth={true}
           offset={-50}
           duration={700}
+          className={classes.link}
         >
-          Project
+          Projects
         </Link>
 
         <Link
