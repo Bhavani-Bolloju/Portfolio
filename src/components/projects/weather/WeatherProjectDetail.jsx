@@ -71,7 +71,7 @@ function WeatherProjectDetail() {
         </ul>
       </div>
       <div className={classes.challenges}>
-        <HeadingTertiary>Challenges faced</HeadingTertiary>
+        d<HeadingTertiary>Challenges faced</HeadingTertiary>
         <div>
           <SubtitleHeading>
             01. Simplifying Weather Data Integration

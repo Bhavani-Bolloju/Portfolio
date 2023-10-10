@@ -3,7 +3,7 @@ import classes from "./Home.module.scss";
 
 import { ButtonPrimary, ButtonLink } from "../ui/ButtonOutline";
 
-import resume from "../../assets/home/Bhavani_Bolloju_WE.pdf";
+import resume from "../../assets/home/Bhavani_CV-E.pdf";
 
 import { Link } from "react-scroll";
 
