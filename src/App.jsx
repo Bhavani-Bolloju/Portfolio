@@ -17,7 +17,7 @@ import CustomCursor from "./components/ui/CustomCursor";
 function App() {
   return (
     <div className="dark">
-      <CustomCursor></CustomCursor>
+      <CustomCursor />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/project" element={<ProjectPage />}>

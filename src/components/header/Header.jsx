@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Header.module.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import logo from "../../assets/home/Full-logo.svg";
 
 import { SiSubstack, SiLinkedin, SiGithub } from "react-icons/si";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineClose } from "react-icons/md";
+
+import { NavLink } from "react-router-dom";
 
 function Header() {
   const [showHeader, setShowHeader] = useState(false);
@@ -37,13 +39,17 @@ function Header() {
     <header
       className={`${classes.header} ${
         (showHeader || navDropdown) && classes.scroll
-      }`}
+      } `}
     >
       <div className={classes.logo}>
         <img src={logo} alt="" />
       </div>
 
-      <nav className={classes["nav-items"]}>
+      <nav
+        className={`${classes["nav-items"]} ${
+          navDropdown && classes["nav-items__dropdown"]
+        }`}
+      >
         <Link
           activeClass={classes["active"]}
           to="home"
@@ -94,6 +100,7 @@ function Header() {
         >
           footer
         </Link>
+        <NavLink to="/blog">Blog</NavLink>
       </nav>
 
       <div className={classes["social-link"]}>
@@ -120,64 +127,6 @@ function Header() {
         <RxHamburgerMenu className={classes["nav__dropdown--open"]} />
         <MdOutlineClose className={classes["nav__dropdown--close"]} />
       </button>
-      <ul
-        className={`${classes["nav__dropdown--options"]} ${
-          navDropdown && classes["nav__dropdown--active"]
-        }`}
-      >
-        <Link
-          activeClass={classes["active"]}
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={700}
-        >
-          Hero
-        </Link>
-        <Link
-          activeClass={classes["active"]}
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={700}
-        >
-          About
-        </Link>
-        <Link
-          activeClass={classes["active"]}
-          to="skills"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={700}
-        >
-          skills
-        </Link>
-        <Link
-          activeClass={classes["active"]}
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={700}
-          className={classes.link}
-        >
-          Projects
-        </Link>
-
-        <Link
-          activeClass={classes["active"]}
-          to="footer"
-          spy={true}
-          smooth={true}
-          offset={-500}
-          duration={700}
-        >
-          Footer
-        </Link>
-      </ul>
     </header>
   );
 }

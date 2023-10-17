@@ -1,7 +1,7 @@
 .header {
   padding: 0rem 10rem;
   position: relative;
-  z-index: 20000;
+  z-index: 2000;
   position: fixed;
   display: flex;
   align-items: center;
@@ -36,12 +36,33 @@
   z-index: 2000;
 
   @media screen and (max-width: 600px) {
-    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    background-color: #0d0d0ddb;
+
+    gap: 0;
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+
+    &__dropdown {
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   a {
     font-family: var(--font-family--3);
     font-weight: 500;
+    text-decoration: none;
     font-size: 1.6rem;
     text-transform: capitalize;
     text-align: start;
@@ -52,6 +73,13 @@
     justify-content: space-between;
     align-items: stretch;
     gap: 0.5rem;
+
+    @media screen and (max-width: 600px) {
+      padding: 2rem 5rem;
+      width: 100%;
+      align-items: flex-end;
+      border: 1px solid #555d501c;
+    }
 
     &::before {
       content: "";
@@ -64,11 +92,23 @@
       background-color: var(--color-tertiary--1);
       transition: all 0.3s;
       // margin-top: 1rem;
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
     }
 
     &:hover {
       color: var(--color-secondary--2);
       cursor: none;
+
+      @media screen and (max-width: 600px) {
+        cursor: none;
+        // background-color: var(--color-primary--1);
+        background-color: #00000078;
+        color: var(--color-secondary--2);
+        font-weight: 600;
+      }
     }
   }
   .active {
@@ -134,47 +174,6 @@
   }
   &--close {
     display: none;
-  }
-
-  &--options--active {
-    display: none;
-  }
-
-  &--options {
-    position: absolute;
-    right: 0%;
-    display: flex;
-    flex-direction: column;
-    top: 100%;
-    width: 100%;
-    text-align: right;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s;
-    @media screen and (min-width: 600px) {
-      display: none;
-    }
-
-    a {
-      padding: 2rem 5rem;
-      text-transform: uppercase;
-      background-color: #0d0d0de3;
-      border: 1px solid #555d501c;
-      font-weight: 700;
-      color: var(--color-tertiary--1);
-
-      &:hover {
-        cursor: none;
-        background-color: var(--color-primary--1);
-        color: var(--color-secondary--2);
-        font-weight: 600;
-      }
-    }
-  }
-
-  &--active {
-    visibility: visible;
-    opacity: 1;
   }
 
   .active &--open {
