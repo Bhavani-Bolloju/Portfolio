@@ -15,25 +15,6 @@ import ShopCartDetailPage from "./components/projects/E-commerce/ShopCartDetailP
 import CustomCursor from "./components/ui/CustomCursor";
 
 function App() {
-  const [isModeLight, setIsModeLight] = useState(false);
-
-  const handleScroll = (event) => {
-    if (event.deltaY > 0) {
-      // Scrolling down
-      scroll.scrollMore(100); // Adjust the scroll distance as needed
-    } else {
-      // Scrolling up
-      scroll.scrollMore(0); // Adjust the scroll distance as needed
-    }
-  };
-
-  useEffect(() => {
-    // window.addEventListener("wheel", handleScroll);
-    // return () => {
-    //   window.removeEventListener("wheel", handleScroll);
-    // };
-  }, []);
-
   return (
     <div className="dark">
       <CustomCursor></CustomCursor>
