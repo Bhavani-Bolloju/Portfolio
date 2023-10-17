@@ -38,8 +38,7 @@
   @media screen and (max-width: 600px) {
     width: 100%;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+
     position: absolute;
     top: 7rem;
     right: 0;
@@ -76,9 +75,11 @@
 
     @media screen and (max-width: 600px) {
       padding: 2rem 5rem;
+      letter-spacing: 1px;
       width: 100%;
       align-items: flex-end;
       border: 1px solid #555d501c;
+      backdrop-filter: blur(2px);
     }
 
     &::before {
@@ -91,7 +92,6 @@
       transform-origin: start;
       background-color: var(--color-tertiary--1);
       transition: all 0.3s;
-      // margin-top: 1rem;
 
       @media screen and (max-width: 600px) {
         display: none;
@@ -104,7 +104,6 @@
 
       @media screen and (max-width: 600px) {
         cursor: none;
-        // background-color: var(--color-primary--1);
         background-color: #00000078;
         color: var(--color-secondary--2);
         font-weight: 600;

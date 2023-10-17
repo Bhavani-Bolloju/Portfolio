@@ -100,7 +100,7 @@ function Header() {
         >
           footer
         </Link>
-        <NavLink to="/blog">Blog</NavLink>
+        {/* <NavLink to="/blog">Blog</NavLink> */}
       </nav>
 
       <div className={classes["social-link"]}>
