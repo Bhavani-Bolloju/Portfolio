@@ -1,0 +1,23 @@
+.blogsPage {
+  background-image: url("../../assets/home/pattern_2.svg");
+  background-repeat: repeat;
+  height: 100vh;
+  padding: 5rem 20rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  img {
+    height: 4rem;
+    display: block;
+  }
+
+  h4 {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}

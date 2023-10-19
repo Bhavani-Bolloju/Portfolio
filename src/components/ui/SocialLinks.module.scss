@@ -1,0 +1,30 @@
+.social-link {
+  // position: absolute;
+  right: 10%;
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      cursor: none;
+    }
+  }
+
+  svg {
+    font-size: 1.5rem;
+    color: var(--color-tertiary--1);
+    &:hover {
+      cursor: none;
+      color: var(--color-secondary--2);
+    }
+  }
+}

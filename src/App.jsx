@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-
-import { animateScroll as scroll } from "react-scroll";
+import React from "react";
 
 import HomePage from "./components/pages/HomePage";
 import ProjectPage from "./components/pages/ProjectPage";

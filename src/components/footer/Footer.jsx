@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Footer.module.scss";
 import { SiSubstack, SiLinkedin, SiGithub } from "react-icons/si";
+import SocialLinks from "../ui/SocialLinks";
 
 import { SubtitleHeading } from "../ui/Headings";
 
@@ -23,7 +24,8 @@ function Footer() {
         </div>
         <div className={classes["footer__social-links"]}>
           <SubtitleHeading>social</SubtitleHeading>
-          <div>
+          <SocialLinks></SocialLinks>
+          {/* <div>
             <a href="https://github.com/Bhavani-Bolloju" target="_blank">
               <SiGithub />
             </a>
@@ -36,7 +38,7 @@ function Footer() {
             <a href="https://bhavanibolloju.substack.com/" target="_blank">
               <SiSubstack />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={classes["footer__bottom"]}>

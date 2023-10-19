@@ -56,13 +56,8 @@
   }
   &__social-links {
     div {
-      display: flex;
-      gap: 2.5rem;
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
       svg {
+        color: var(--color-secondary--2);
         &:hover {
           color: var(--color-tertiary--1);
           cursor: none;
