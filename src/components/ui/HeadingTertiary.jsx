@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./HeadingTertiary.module.scss";
 
 function HeadingTertiary(props) {
