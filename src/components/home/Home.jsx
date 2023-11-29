@@ -1,9 +1,8 @@
-import React from "react";
 import classes from "./Home.module.scss";
 
-import { ButtonPrimary, ButtonLink } from "../ui/ButtonOutline";
+import { ButtonLink } from "../ui/ButtonOutline";
 
-import resume from "../../assets/home/Bhavani_CV-E.pdf";
+import resume from "../../assets/home/Bhavani-Bolloju-Resume.pdf";
 
 import { Link } from "react-scroll";
 

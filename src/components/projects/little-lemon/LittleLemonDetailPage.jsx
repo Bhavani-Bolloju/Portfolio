@@ -7,25 +7,22 @@ import { SupportingHeading } from "../../ui/Headings";
 
 import image1 from "../../../assets/project/little-lemon/little-lemon_LS.png";
 import image2 from "../../../assets/project/little-lemon/little-lemon_SS.png";
+import weekSpecials from "../../../assets/project/little-lemon/weeks-specials.png";
+import testimonials from "../../../assets/project/little-lemon/testimonials.png";
+import footer from "../../../assets/project/little-lemon/footer.png";
+import backStory from "../../../assets/project/little-lemon/restaurant-backstory.png";
 
-import { FaReact, FaSass, FaGithub } from "react-icons/fa";
-import { BiLogoFirebase, BiLogoRedux } from "react-icons/bi";
-import { AiOutlineAntDesign } from "react-icons/ai";
-import { PiFramerLogoFill } from "react-icons/pi";
+import { FaReact, FaSass, FaGithub, FaFigma } from "react-icons/fa";
+import { BiLogoFirebase } from "react-icons/bi";
+
 import { TbBrandVscode } from "react-icons/tb";
 
-import products from "../../../assets/project/orpl/ORPL_products-page.png";
+import reserveTable from "../../../assets/project/little-lemon/Reserve-a-table.png";
 
-import cart from "../../../assets/project/orpl/cart.png";
+import confirmation from "../../../assets/project/little-lemon/Booking-confirmation.png";
 
 import { Item } from "../../ui/UIComponents";
 
-import productList from "../../../assets/project/orpl/ProductList.png";
-import adminPage from "../../../assets/project/orpl/adminPage.png";
-import blog1 from "../../../assets/project/orpl/blog_1.png";
-import blog2 from "../../../assets/project/orpl/blog_2.png";
-import detailPage1 from "../../../assets/project/orpl/userInteraction1.png";
-import detailPage2 from "../../../assets/project/orpl/userInteraction2.png";
 import { ButtonLink } from "../../ui/ButtonOutline";
 import ImagesContainer from "../../ui/ImagesContainer";
 
@@ -39,35 +36,45 @@ function LittleLemonDetailPage() {
         <HeadingTertiary>Project overview</HeadingTertiary>
         <ul className={classes.list}>
           <Item>
-            Developed the
+            Developed a dynamic and user-friendly website for 'A Little Lemon'
+            restaurant, featuring responsive design and{" "}
+            <span className={classes.highlight}>
+              table reservation functionality{" "}
+            </span>
+            .
+          </Item>
+
+          <Item>
+            Users can effortlessly select their preferred date, with the
+            application dynamically{" "}
+            <span className={classes.highlight}>
+              presenting available timings
+            </span>
+            .
+          </Item>
+
+          <Item>
+            Emphasized a simplified reservation process to enhance the overall
+            user experience.
+          </Item>
+
+          <Item>
+            Successfully{" "}
             <span className={classes.highlight}>
               {" "}
-              e-commerce functionality{" "}
+              integrated Firebase to manage reservation data{" "}
+            </span>{" "}
+            in real-time, ensuring accurate and up-to-date availability
+            information.
+          </Item>
+          <Item>
+            Prioritized UI/UX principles and utilized Figma to
+            <span className={classes.highlight}>
+              {" "}
+              design an intuitive wireframe and prototype
             </span>
-            that enables seamless online shopping . Users can effortlessly
-            browse products, add items to their cart, and securely complete
-            purchases with just a few clicks.
-          </Item>
-
-          <Item>
-            Implemented a
-            <span className={classes.highlight}> blog section </span> that
-            offers valuable insights. I incorporated exclusive
-            <span className={classes.highlight}> admin rights </span>, where
-            administrators have special rights to add and manage blog content.
-          </Item>
-
-          <Item>
-            Each blog post has its dedicated page for a deeper dive. Users can
-            actively engage with likes and comments.
-          </Item>
-
-          <Item>
-            Integrated{" "}
-            <span className={classes.highlight}> user authentication </span>
-            using Firebase, ensuring a secure environment. Users must log in to
-            place orders, add items to their cart, or engage with blog posts,
-            such as liking them.
+            . This approach ensures a visually appealing reservation process,
+            aimed at increasing online sales.
           </Item>
         </ul>
       </div>
@@ -75,33 +82,38 @@ function LittleLemonDetailPage() {
         <HeadingTertiary>Project Goals and Objectives:</HeadingTertiary>
         <ul className={classes.list}>
           <Item>
-            Developed a{" "}
-            <span className={classes.highlight}>
-              {" "}
-              fully responsive website{" "}
-            </span>{" "}
-            to ensure optimal user experience across various devices and screen
-            sizes.
+            <span className="highlight"></span>
+            Build a fully responsive and functional booking table, Ensuring
+            users can easily access and use the table reservation system across
+            various devices,
           </Item>
 
           <Item>
-            Create an intuitive and visually appealing{" "}
-            <span className={classes.highlight}> e-commerce platform </span>
-            with smooth product browsing, cart management, and secure payments.
+            <span className="highlight"></span>
+            Utilize Figma and UI/UX principles to create a visually appealing
+            wireframe and prototype, perform thorough research, develop user
+            personas, and create a journey map
           </Item>
 
           <Item>
-            Create an{" "}
-            <span className={classes.highlight}>admin-friendly dashboard </span>{" "}
-            interface for efficient content management, focusing on the user
-            experience of administrators responsible for adding and editing blog
-            content.
+            <span className="highlight"></span>
+            Open opportunities for additional features in the reservation
+            process, like providing seating options, selected preferred date and
+            time, number of diners and special occusion.
           </Item>
 
           <Item>
-            <span className={classes.highlight}>Optimize front-end code </span>{" "}
-            and assets for faster page loading and a seamless browsing
-            experience.
+            Build the app using semantic markup. Optimize the website to meet
+            accessibility standards , ensuring an inclusive experience for all
+            users.
+          </Item>
+          <Item>
+            Enhance the overall website experience, focusing on speed,
+            responsiveness, and functionality to meet user expectations.
+          </Item>
+          <Item>
+            Enhance app functionality through the integration of unit tests and
+            Optimize the app using performance tools like Lighthouse.
           </Item>
         </ul>
       </div>
@@ -112,18 +124,12 @@ function LittleLemonDetailPage() {
             <FaReact></FaReact>
             <span>React</span>
           </li>
-          <li>
-            <BiLogoRedux />
-            <span>Redux</span>
-          </li>
+
           <li>
             <FaSass></FaSass>
             <span>Sass</span>
           </li>
-          <li>
-            <AiOutlineAntDesign />
-            <span>AntD</span>
-          </li>
+
           <li>
             <BiLogoFirebase />
             <span>Firebase</span>
@@ -132,193 +138,95 @@ function LittleLemonDetailPage() {
             <FaGithub />
             <span>Github</span>
           </li>
-          <li>
-            <PiFramerLogoFill />
-            <span>Framer motion</span>
-          </li>
+
           <li>
             <TbBrandVscode />
             <span>Vs</span>
           </li>
+          <li>
+            <FaFigma />
+            <span>Figma</span>
+          </li>
         </ul>
       </div>
-      <div className={classes.roles}>
-        <HeadingTertiary>Role and Responsibilities:</HeadingTertiary>
-        <ul>
-          <Item>
-            Create responsive and accessible user interfaces from design
-            mockups.
-          </Item>
-          <Item>
-            Use Git for version control and collaboration with a structured
-            commit history.
-          </Item>
 
-          <Item>
-            Implement secure authentication systems for user data protection and
-            exclusive features.
-          </Item>
-
-          <Item>
-            Utilize modern frameworks and libraries for streamlined development
-            and enhanced user interactions.
-          </Item>
-
-          <Item>
-            Provide regular project updates, address enhancements, and promptly
-            resolve issues.
-          </Item>
-        </ul>
-      </div>
       <div className={classes.challenges}>
         <HeadingTertiary>Challenges Faced:</HeadingTertiary>
         <div className={classes.challenge__item}>
-          <SubtitleHeading>
-            01. Synchronized Flower Pot Animation
-          </SubtitleHeading>
+          <SubtitleHeading>01. Table Booking functionality</SubtitleHeading>
           <SupportingHeading>Description:</SupportingHeading>
           <p className={classes.description}>
-            I faced the challenge of creating a synchronized animation featuring
-            a flower pot and a hand. The goal was to maintain perfect
-            synchronization during the pot's toss, catch, and looping motion.
-            Implemented solely with CSS keyframes, the animation was also
-            optimized for small screens.
+            During the development of the table booking functionality, I
+            encountered a challenging situation. The initial plan was to fetch
+            available time data from an external API provided by Coursera.
+            Unfortunately, this API failed to provide the necessary data.
           </p>
 
           <SupportingHeading>Challenges faced and solution:</SupportingHeading>
 
           <ul className={classes["challenge__solution"]}>
             <Item>
-              Ensuring that the flower pot and hand moved perfectly in sync was
-              quite a challenge. I needed to carefully align their positions and
-              movements to maintain perfect synchrony.
+              With the assistance of Firebase, I stored the restaurant's opening
+              hours. When a user selects a date, the app fetches and stores the
+              opening hours and already reserved data using useReducer. This
+              approach facilitates seamless filtering of available time slots
+              based on the user-selected dates.
             </Item>
 
             <Item>
-              I opted to use only CSS for the animation without relying on
-              external libraries. Implementing transitions for both the pot and
-              the hand individually while keeping them in sync required careful
-              planning and precise CSS adjustments.
+              Once the data is stored in useReducer, the filtered available time
+              information is passed to the child component. This allows users to
+              conveniently select an appropriate time for their reservation.
             </Item>
-
             <Item>
-              To bring this complex animation to life, I leveraged CSS
-              keyframes. Keyframes allowed me to define specific animation
-              sequences and timings, enhancing the visual appeal and smoothness
-              of the animation.
-            </Item>
-
-            <Item>
-              Adapting the animation for small screens presented an extra
-              challenge. I modified sizes and animation settings to ensure a
-              consistent and visually pleasing experience on various screen
-              sizes.
-            </Item>
-
-            <Item>
-              You can view the synchronized flower pot animation in action in
-              the "Why Choose Us" section -
-              <a href="https://orpl---finalproject.web.app/" target="_blank">
-                here
-              </a>
+              Additionally, I addressed scenarios where all slots were booked by
+              prompting users to choose an alternative date. This ensures that
+              users cannot select a date when the restaurant is closed,
+              especially on Sundays.
             </Item>
           </ul>
         </div>
         <div className={classes.challenge__item}>
-          <SubtitleHeading>02. Dynamic Product Selection</SubtitleHeading>
+          <SubtitleHeading>
+            02. Testing Asynchronous Operations Challenge
+          </SubtitleHeading>
           <SupportingHeading>Description:</SupportingHeading>
           <p>
-            During development i faced key challenge in managing product
-            versions and plans. We had two versions, 'Lite' and 'Pro,' each with
-            unique pricing and features. While 'Lite' was straightforward, 'Pro'
-            demanded dynamic presentation of two distinct plans, each with its
-            own pricing and features based on user selection.
+            A significant challenge in the development process revolved around
+            writing tests for form submissions where fetch requests were made to
+            store data in Firebase. Traditional mocking methods proved
+            challenging due to the complex nature of simulating these fetch
+            requests.
           </p>
 
           <SupportingHeading>Challenges faced and solution:</SupportingHeading>
 
           <ul className={classes["challenge__solution"]}>
             <Item>
-              The challenge was to establish a clear system for representing two
-              product versions, "Lite" and "Pro," and efficiently manage their
-              associated plans.
+              To address this challenge, I explored and implemented an
+              alternative solution:
             </Item>
 
             <Item>
-              Ensuring that users could easily select their desired product
-              version and plan while receiving accurate pricing and feature
-              information was crucial.
+              Introduced "jest-fetch-mock," a third-party package designed to
+              simplify the mocking of fetch calls. This package allows for easy
+              simulation of HTTP requests, enabling precise control over the
+              responses needed during testing. "jest-fetch-mock" under the
+              surface uses Jest's built-in support for mocking.
             </Item>
 
             <Item>
-              I structured the database to associate each product version with
-              its corresponding plans.
+              Exported the actual function handler responsible for making the
+              fetch request to Firebase. This step was crucial for achieving a
+              more realistic simulation of the asynchronous operation during
+              testing.
             </Item>
 
             <Item>
-              I designed an user interface that guided users through the product
-              selection process. When a user selected the "Pro" version, the
-              interface dynamically presented the two available plans, each with
-              its unique features and pricing details. This ensured that users
-              could make informed decisions based on their specific needs.
+              Used React Testing Library alongside Jest to compare the expected
+              outcomes to the actual results. This ensured code behaved as
+              intended.
             </Item>
-
-            <div className={classes.productsImage}>
-              <img src={products} alt="" />
-            </div>
-
-            <Item>
-              You can experience the dynamic product selection process in action
-              on the "Products" page -
-              <a
-                href="https://orpl---finalproject.web.app/products"
-                target="_blank"
-              >
-                here
-              </a>
-            </Item>
-          </ul>
-        </div>
-        <div className={classes.challenge__item}>
-          <SubtitleHeading>03. Shopping Cart Management</SubtitleHeading>
-          <SupportingHeading>Description:</SupportingHeading>
-          <p>
-            I faced a challenge in managing the shopping cart to ensure it
-            always stayed up-to-date with the data stored in Firebase.
-          </p>
-
-          <SupportingHeading>Challenges faced and solution:</SupportingHeading>
-
-          <ul className={classes["challenge__solution"]}>
-            <Item>
-              Handling additions, removals, and updates in the shopping cart
-              while providing a smooth and responsive user experience.
-            </Item>
-
-            <Item>
-              Keeping the shopping cart data in sync with Firebase to enable
-              real-time updates and maintain cart data consistently across user
-              sessions.
-            </Item>
-
-            <Item>
-              I leveraged the power of React Redux Toolkit, a versatile tool for
-              state management, to simplify cart operations and improve the user
-              interface's responsiveness.
-            </Item>
-
-            <Item>
-              Implemented custom action creators, which seamlessly communicated
-              with Firebase. These actions facilitated the storage and retrieval
-              of cart data, ensuring that the cart state in Redux and Firebase
-              remained perfectly synchronized. This synchronization created a
-              consistent shopping experience, making it easy for users to
-              interact with their carts.
-            </Item>
-
-            <div className={classes.productsImage}>
-              <img src={cart} alt="" />
-            </div>
           </ul>
         </div>
       </div>
@@ -326,54 +234,139 @@ function LittleLemonDetailPage() {
         <HeadingTertiary>Key Features</HeadingTertiary>
         <ul className={classes.list}>
           <Item>
-            <span className={classes.highlight}> E-Commerce: </span> Website
-            incorporates an e-commerce functionality that allows users to browse
-            and purchase products from the company's catalog with shopping cart
-            functionality.
+            Implemented a solution to address users' challenges with online
+            table reservations for Little Lemon Restaurant, offering a more
+            streamlined and convenient booking process.
           </Item>
           <div className={classes.featuresImage}>
-            <img src={productList} alt="" />
+            <img src={reserveTable} alt="" />
           </div>
 
           <Item>
-            <span className={classes.highlight}> Order Placement: </span>
-            Users can easily place orders for products they intend to purchase
-          </Item>
-
-          <Item>
-            <span className={classes.highlight}>Admin Privileges: </span>
-            Special admin privileges were implemented to manage the website's
-            blog content.
+            A booking confirmation feature to provide users with acknowledgment
+            once their reservation is successfully confirmed.
           </Item>
 
           <div className={classes.featuresImage}>
-            <img src={adminPage} alt="" />
+            <img src={confirmation} alt="" />
           </div>
-          <Item>
-            <span className={classes.highlight}>Blog Section: </span>A dedicated
-            blog section offers a platform for content creation and company
-            announcements, contributing to an enhanced user experience.
-          </Item>
-          <div className={classes.featuresImage}>
-            <img src={blog1} alt="" />
-            <img src={blog2} alt="" />
-          </div>
-          <Item>
-            <span className={classes.highlight}>User Interaction: </span>
-            Engage users with likes and comments on blog posts.
-          </Item>
+        </ul>
+      </div>
+      <div className={classes["future-enhacements"]}>
+        <HeadingTertiary>Future enhancements</HeadingTertiary>
+        <div className={classes.challenge__item}>
+          <SubtitleHeading>01. User authenticaion</SubtitleHeading>
+          <SupportingHeading>Description:</SupportingHeading>
+          <p className={classes.description}>
+            I plan to enhance the Little Lemon Restaurant website by introducing
+            user authentication. This feature allow user to have a secure and
+            personalized experience.
+          </p>
 
+          <SupportingHeading>Implementation details</SupportingHeading>
+
+          <ul className={classes["challenge__solution"]}>
+            <Item>
+              Users will have the option to log in or sign up before making a
+              reservation, this will allow users to save preferences.
+            </Item>
+
+            <Item>
+              Personalized user accounts to improve the overall experience,
+              making the booking process more user-friendly.
+            </Item>
+          </ul>
+        </div>
+        <div className={classes.challenge__item}>
+          <SubtitleHeading>02. Online Ordering Feature</SubtitleHeading>
+          <SupportingHeading>Description:</SupportingHeading>
+          <p className={classes.description}>
+            To further enhance the functionality of the Little Lemon Restaurant
+            website, I plan to introduce an online ordering system. This feature
+            will enable customers to order weeks specials online.
+          </p>
+
+          <SupportingHeading>Implementation details</SupportingHeading>
+
+          <ul className={classes["challenge__solution"]}>
+            <Item>
+              Fetch and display real-time information about weeks specials and
+              allow users to choose and place order.
+            </Item>
+
+            <Item>
+              Provide detailed information about each menu item to help users
+              make informed decisions.
+            </Item>
+
+            <div className={classes.featuresImage}>
+              <img src={weekSpecials} alt="weeks specials" />
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div className={classes["project__lesson-learned"]}>
+        <HeadingTertiary>Lesson learned</HeadingTertiary>
+        <ul className={classes.list}>
+          <Item>
+            Recognized the importance of understanding and solving user
+            problems, giving a clear purpose to the app.
+          </Item>
+          <Item>
+            Emphasized the significance of detailed planning using design
+            prototypes and wireframes to foresee and address potential issues.
+          </Item>
+          <Item>
+            Implemented meta tags and Open Graph Protocol for better search
+            engine visibility and social media sharing.
+          </Item>
+          <Item>
+            Prioritized user accessibility using semantic HTML, ARIA attributes,
+            and clear form labels.
+          </Item>
+          <Item>
+            Understood the importance of rigorous testing, ensuring the app
+            functions well, and successfully overcoming testing challenges.
+          </Item>
+          <Item>
+            Utilized tools like Lighthouse and PageSpeed to optimize website
+            performance, aiming for better user experience.
+          </Item>
+        </ul>
+      </div>
+      {/* <div className={classes["project__process"]}>
+        <HeadingTertiary>Process or methodology</HeadingTertiary>
+        <ul className={classes.list}>
+          <Item>
+            Provide a section that elaborates on your development process or
+            methodology. Explain how you approached the project from conception
+            to completion, highlighting key decision points and milestones.
+          </Item>
+        </ul>
+      </div> */}
+      <div className={classes["project__designs"]}>
+        <HeadingTertiary>Website preview</HeadingTertiary>
+
+        <ul className={classes.list}>
+          <Item>Home page - Restaurant's back story section</Item>
           <div className={classes.featuresImage}>
-            <img src={detailPage1} alt="" />
-            <img src={detailPage2} alt="" />
+            <img src={backStory} alt="back story" />
+          </div>
+          <Item>Home page - Footer section</Item>
+          <div className={classes.featuresImage}>
+            <img src={footer} alt="footer" />
+          </div>
+          <Item>Home page - Testimonial section</Item>
+          <div className={classes.featuresImage}>
+            <img src={testimonials} alt="testimonials" />
           </div>
         </ul>
       </div>
       <div className={classes.btns}>
-        <ButtonLink href="https://orpl---finalproject.web.app/">
+        <ButtonLink href="https://little-lemon-restaurant-4ced5.web.app/">
           Live Demo
         </ButtonLink>
-        <ButtonLink href="https://github.com/Bhavani-Bolloju/Ouranos-Project-website">
+        <ButtonLink href="https://github.com/Bhavani-Bolloju/little-lemon-restaurant">
           Github
         </ButtonLink>
       </div>
