@@ -107,7 +107,7 @@ function Projects() {
         </div>
         <div className={classes["project"]}>
           <HeadingTertiary className={classes["project__title"]}>
-            02. Daily Weather
+            03. Daily Weather
           </HeadingTertiary>
           <ProjectCardReverse>
             <div className={classes["project__image"]}>
@@ -115,7 +115,7 @@ function Projects() {
             </div>
             <div className={classes["project__content"]}>
               <HeadingTertiary className={classes["project__title"]}>
-                02. Daily Weather
+                03. Daily Weather
               </HeadingTertiary>
               <p className={classes["project__text"]}>
                 Developed a web app using React.js and Redux to provide
@@ -146,7 +146,7 @@ function Projects() {
         </div>
         <div className={classes["project"]}>
           <HeadingTertiary className={classes["project__title"]}>
-            03. Shop Cart
+            04. Shop Cart
           </HeadingTertiary>
           <ProjectCard>
             <div className={classes["project__image"]}>
@@ -154,7 +154,7 @@ function Projects() {
             </div>
             <div className={classes["project__content"]}>
               <HeadingTertiary className={classes["project__title"]}>
-                03. Shop Cart
+                04. Shop Cart
               </HeadingTertiary>
               <p className={classes["project__text"]}>
                 Developed a fully responsive e-commerce website that seamlessly

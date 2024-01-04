@@ -37,8 +37,8 @@
   }
 
   &__image {
-    max-height: 35rem;
-    height: auto;
+    max-height: 50rem;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     border-radius: 0.5rem;
@@ -75,7 +75,8 @@
       position: absolute;
       padding: 5rem 20rem;
       width: 100%;
-      // height: 100%;
+      height: inherit;
+
       min-height: fit-content;
       background: linear-gradient(
         to top left,
