@@ -19,11 +19,11 @@
     height: 70vh;
   }
 
-  background: url("../../assets/home/pattern_1.svg");
+  background: url("../../assets/home/noise_3.png");
 
-  background: url("../../assets/home/pattern_2.svg");
+  // background: url("../../assets/home/pattern_2.svg");
 
-  background-color: var(--color-primary--1);
+  // background-color: var(--color-primary--1);
 
   position: relative;
 
@@ -54,6 +54,7 @@
       font-weight: 500;
       font-size: var(--heading-5);
       margin-bottom: var(--margin-lg);
+      margin-bottom: var(--margin-sm);
 
       @media screen and (max-width: 950px) {
         margin-bottom: var(--margin-md);

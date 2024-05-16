@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import classes from "./Header.module.scss";
 import { Link } from "react-scroll";
 import logo from "../../assets/home/Full-logo.svg";
@@ -6,8 +6,7 @@ import logo from "../../assets/home/Full-logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineClose } from "react-icons/md";
 
-import { NavLink } from "react-router-dom";
-import SocialLinks from "../ui/SocialLinks";
+// import { NavLink } from "react-router-dom";
 
 function Header() {
   const [showHeader, setShowHeader] = useState(false);
@@ -57,7 +56,7 @@ function Header() {
           offset={-50}
           duration={700}
         >
-          Hero
+          Home
         </Link>
         <Link
           activeClass={classes["active"]}
@@ -102,7 +101,7 @@ function Header() {
         {/* <NavLink to="/blog">Blog</NavLink> */}
       </nav>
 
-      <SocialLinks></SocialLinks>
+      {/* <SocialLinks></SocialLinks> */}
 
       <button
         className={`${classes["nav__dropdown--btns"]} ${

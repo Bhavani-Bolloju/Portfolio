@@ -21,12 +21,16 @@ function CustomCursor() {
   // console.log(cursorX);
 
   return (
-    <div
-      className={classes["custom-cursor"]}
-      style={{ left: cursorX, top: cursorY }}
-    >
-      <div className={classes.dot}></div>
-    </div>
+    <>
+      <div
+        className={classes["custom-cursor"]}
+        style={{ left: cursorX, top: cursorY }}
+      />
+      <div
+        className={classes["custom-cursor--dot"]}
+        style={{ left: cursorX, top: cursorY }}
+      />
+    </>
   );
 }
 
