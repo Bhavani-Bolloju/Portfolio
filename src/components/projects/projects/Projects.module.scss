@@ -15,6 +15,53 @@
   @media screen and (max-width: 600px) {
     padding: 5rem;
   }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(46%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 5rem;
+    .item {
+      width: 100%;
+      max-height: 32rem;
+      overflow: hidden;
+      position: relative;
+
+      transition: transform 0.5s;
+      border-radius: 1rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        position: absolute;
+        color: var(--color-secondary--2);
+        width: 100%;
+        left: 0;
+        bottom: -10px;
+        padding: 2rem 1rem;
+        background: linear-gradient(to right top, #dc143ccb, #000000c0);
+        backdrop-filter: blur(2px);
+        transform: translateY(100%);
+        transform-origin: bottom;
+        overflow: hidden;
+        transition: transform 0.2s;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+
+        .content {
+          transform: translateY(0%);
+        }
+        img {
+          background-blend-mode: soft-light(10px);
+        }
+      }
+    }
+  }
 }
 
 .project {

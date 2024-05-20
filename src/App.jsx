@@ -1,5 +1,3 @@
-import React from "react";
-
 import HomePage from "./components/pages/HomePage";
 import ProjectPage from "./components/pages/ProjectPage";
 import BlogsPage from "./components/pages/BlogsPage";

@@ -24,7 +24,52 @@ function Projects() {
   return (
     <section className={classes.projects} id="projects">
       <SecondaryHeading>My projects</SecondaryHeading>
-      <div className={classes["projects__container"]}>
+
+      <div className={classes.list}>
+        <div className={classes.item}>
+          <img src={shop} alt="" />
+          <div className={classes.content}>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              ullam porro. Hic ratione laboriosam omnis sunt, sit laudantium
+              iusto voluptatem fugit ipsa aliquid magni totam cumque deserunt
+              rerum voluptatibus tempora!{" "}
+            </p>
+          </div>
+        </div>
+        <div className={classes.item}>
+          <img src={image1} alt="" />
+          <div className={classes.content}>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              ullam porro. Hic ratione laboriosam omnis sunt, sit laudantium
+              iusto voluptatem fugit ipsa aliquid magni totam cumque deserunt
+              rerum voluptatibus tempora!{" "}
+            </p>
+          </div>
+        </div>
+        <div className={classes.item}>
+          <img src={littleLemon} alt="" />
+          <div className={classes.content}>
+            <div>
+              <h3>Little lemon</h3>
+            </div>
+          </div>
+        </div>
+        <div className={classes.item}>
+          <img src={weather1} alt="" />
+          <div className={classes.content}>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              ullam porro. Hic ratione laboriosam omnis sunt, sit laudantium
+              iusto voluptatem fugit ipsa aliquid magni totam cumque deserunt
+              rerum voluptatibus tempora!{" "}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className={classes["projects__container"]}>
         <div className={classes["project"]}>
           <HeadingTertiary className={classes["project__title"]}>
             01. oranous robotics
@@ -182,7 +227,7 @@ function Projects() {
             </div>
           </ProjectCard>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -18,7 +18,7 @@ function Home() {
 
         <p className={classes.intro}>
           A <span className={classes.highlight}> Front-end web developer</span>,
-          passionate about creating beautiful and user-friendly website.
+          i build responsive and user-friendly website.
           <br />
           Welcome to my portfolio.
         </p>
