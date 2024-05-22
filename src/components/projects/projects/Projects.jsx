@@ -1,5 +1,5 @@
 import classes from "./Projects.module.scss";
-import image1 from "../../../assets/project/orpl/ORPL_LS.png";
+import ORPL from "../../../assets/project/orpl/ORPL_LS.png";
 import weather1 from "../../../assets/project/weather/weather_LS.png";
 
 import shop from "../../../assets/project/e-commerce/shop-cart_LS.png";
@@ -18,216 +18,61 @@ import { ProjectCard, ProjectCardReverse } from "../../ui/ProjectCard";
 
 import { ButtonOutline, ButtonLink } from "../../ui/ButtonOutline";
 
-function Projects() {
+// eslint-disable-next-line react/prop-types
+const Project = function ({ image, navLink, title, githubLink }) {
   const navigate = useNavigate();
+  return (
+    <div className={classes.item}>
+      <img src={image} alt={title} />
+      <div className={classes.content}>
+        <h4>{title}</h4>
+        <div className={classes.btns}>
+          <ButtonOutline
+            onClick={() => {
+              navigate(`/project/${navLink}`);
+            }}
+          >
+            read more
+          </ButtonOutline>
+          <ButtonLink href={githubLink}>git hub</ButtonLink>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+function Projects() {
+  // const navigate = useNavigate();
 
   return (
     <section className={classes.projects} id="projects">
       <SecondaryHeading>My projects</SecondaryHeading>
-
       <div className={classes.list}>
-        <div className={classes.item}>
-          <img src={shop} alt="" />
-          <div className={classes.content}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              ullam porro. Hic ratione laboriosam omnis sunt, sit laudantium
-              iusto voluptatem fugit ipsa aliquid magni totam cumque deserunt
-              rerum voluptatibus tempora!{" "}
-            </p>
-          </div>
-        </div>
-        <div className={classes.item}>
-          <img src={image1} alt="" />
-          <div className={classes.content}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              ullam porro. Hic ratione laboriosam omnis sunt, sit laudantium
-              iusto voluptatem fugit ipsa aliquid magni totam cumque deserunt
-              rerum voluptatibus tempora!{" "}
-            </p>
-          </div>
-        </div>
-        <div className={classes.item}>
-          <img src={littleLemon} alt="" />
-          <div className={classes.content}>
-            <div>
-              <h3>Little lemon</h3>
-            </div>
-          </div>
-        </div>
-        <div className={classes.item}>
-          <img src={weather1} alt="" />
-          <div className={classes.content}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              ullam porro. Hic ratione laboriosam omnis sunt, sit laudantium
-              iusto voluptatem fugit ipsa aliquid magni totam cumque deserunt
-              rerum voluptatibus tempora!{" "}
-            </p>
-          </div>
-        </div>
+        <Project
+          image={ORPL}
+          navLink="ouranos"
+          title="01. oranous robotics"
+          githubLink="https://github.com/Bhavani-Bolloju/Ouranos-Project-website"
+        />
+        <Project
+          image={littleLemon}
+          navLink="littleLemon"
+          title="02. little lemon restaurant"
+          githubLink="https://github.com/Bhavani-Bolloju/little-lemon-restaurant"
+        />
+        <Project
+          image={shop}
+          navLink="shopCart"
+          title="03. Shop Cart"
+          githubLink="https://github.com/Bhavani-Bolloju/E-commerce"
+        />
+        <Project
+          image={weather1}
+          navLink="weather"
+          title="04. Daily Weather"
+          githubLink="https://github.com/Bhavani-Bolloju/Weather-App"
+        />
       </div>
-
-      {/* <div className={classes["projects__container"]}>
-        <div className={classes["project"]}>
-          <HeadingTertiary className={classes["project__title"]}>
-            01. oranous robotics
-          </HeadingTertiary>
-          <ProjectCardReverse>
-            <div className={classes["project__image"]}>
-              <img src={image1} alt="" />
-            </div>
-            <div className={classes["project__content"]}>
-              <HeadingTertiary className={classes["project__title"]}>
-                01. oranous robotics
-              </HeadingTertiary>
-              <p className={classes["project__text"]}>
-                A fully responsive company website that seamlessly integrates
-                e-commerce features with an interactive blog section. The
-                platform includes secure integrated payment processing,
-                specialized admin controls for effortless blog management, and
-                user-friendly comment functionality.
-              </p>
-              <div className={classes["project__stack"]}>
-                <FaReact></FaReact>
-                <FaSass></FaSass>
-              </div>
-              <div className={classes.btns}>
-                <ButtonOutline
-                  onClick={() => {
-                    navigate("/project/ouranos");
-                  }}
-                >
-                  read more
-                </ButtonOutline>
-                <ButtonLink href="https://github.com/Bhavani-Bolloju/Ouranos-Project-website">
-                  git hub
-                </ButtonLink>
-              </div>
-            </div>
-          </ProjectCardReverse>
-        </div>
-        <div className={classes["project"]}>
-          <HeadingTertiary className={classes["project__title"]}>
-            02. little lemon restaurant
-          </HeadingTertiary>
-          <ProjectCard>
-            <div className={classes["project__image"]}>
-              <img src={littleLemon} alt="" />
-            </div>
-            <div className={classes["project__content"]}>
-              <HeadingTertiary className={classes["project__title"]}>
-                02. little lemon
-              </HeadingTertiary>
-              <p className={classes["project__text"]}>
-                Built a cool Little Lemon Restaurant online, where people can
-                easily book a table. I used React skills I learned from a
-                Coursera course to make it happen. The goal was simple: make it
-                easy for customers to book online, so the restaurant doesn't
-                have to rely only on walk-ins. By designing everything in Figma
-                and using user-friendly tricks, I aimed to boost sales and keep
-                customers coming back for more tasty experiences!
-              </p>
-              <div className={classes["project__stack"]}>
-                <FaReact />
-                <FaSass />
-                <FaFigma />
-                <IoLogoFirebase />
-              </div>
-              <div className={classes.btns}>
-                <ButtonOutline
-                  onClick={() => {
-                    navigate("/project/littleLemon");
-                  }}
-                >
-                  read more
-                </ButtonOutline>
-                <ButtonLink href="https://github.com/Bhavani-Bolloju/little-lemon-restaurant">
-                  git hub
-                </ButtonLink>
-              </div>
-            </div>
-          </ProjectCard>
-        </div>
-        <div className={classes["project"]}>
-          <HeadingTertiary className={classes["project__title"]}>
-            03. Daily Weather
-          </HeadingTertiary>
-          <ProjectCardReverse>
-            <div className={classes["project__image"]}>
-              <img src={weather1} alt="" />
-            </div>
-            <div className={classes["project__content"]}>
-              <HeadingTertiary className={classes["project__title"]}>
-                03. Daily Weather
-              </HeadingTertiary>
-              <p className={classes["project__text"]}>
-                Developed a web app using React.js and Redux to provide
-                real-time weather data from open-source APIs. Created an
-                intuitive interface for current conditions, hourly, and daily
-                forecasts worldwide. Integrated interactive graphs using
-                Recharts for visualizing hourly weather changes, enhancing user
-                experience.
-              </p>
-              <div className={classes["project__stack"]}>
-                <FaReact></FaReact>
-                <FaSass></FaSass>
-              </div>
-              <div className={classes.btns}>
-                <ButtonOutline
-                  onClick={() => {
-                    navigate("/project/weather");
-                  }}
-                >
-                  read more
-                </ButtonOutline>
-                <ButtonLink href="https://github.com/Bhavani-Bolloju">
-                  git hub
-                </ButtonLink>
-              </div>
-            </div>
-          </ProjectCardReverse>
-        </div>
-        <div className={classes["project"]}>
-          <HeadingTertiary className={classes["project__title"]}>
-            04. Shop Cart
-          </HeadingTertiary>
-          <ProjectCard>
-            <div className={classes["project__image"]}>
-              <img src={shop} alt="" />
-            </div>
-            <div className={classes["project__content"]}>
-              <HeadingTertiary className={classes["project__title"]}>
-                04. Shop Cart
-              </HeadingTertiary>
-              <p className={classes["project__text"]}>
-                Developed a fully responsive e-commerce website that seamlessly
-                integrates data from an open-source API. Key features include
-                robust user authentication, detailed product pages, efficient
-                product category filtering, and convenient cart management. My
-                goal was to create a user-centric online shopping experience.
-              </p>
-              <div className={classes["project__stack"]}>
-                <FaReact></FaReact>
-                <FaSass></FaSass>
-              </div>
-              <div className={classes.btns}>
-                <ButtonOutline
-                  onClick={() => {
-                    navigate("/project/shopCart");
-                  }}
-                >
-                  read more
-                </ButtonOutline>
-                <ButtonLink href="https://github.com/Bhavani-Bolloju/E-commerce">
-                  git hub
-                </ButtonLink>
-              </div>
-            </div>
-          </ProjectCard>
-        </div>
-      </div> */}
     </section>
   );
 }

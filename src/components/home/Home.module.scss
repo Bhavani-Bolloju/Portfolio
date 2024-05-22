@@ -122,3 +122,29 @@
     top: 0rem;
   }
 }
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  border: 0.8rem solid var(--color-tertiary--1);
+  position: absolute;
+  border-style: groove;
+  top: 50%;
+  left: 10%;
+  animation: circle 2s forwards alternate infinite linear;
+  transform-origin: center;
+  // opacity: 0.5;
+}
+
+@keyframes circle {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: rotate(180deg);
+    // top: 50%;
+    // left: 100%;
+    // opacity: 0;
+  }
+}
