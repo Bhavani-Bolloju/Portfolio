@@ -1,37 +1,20 @@
-import classes from "./LittleLemonDetailPage.module.scss";
-
+/* eslint-disable react/no-unescaped-entities */
+// import React from "react";
+import classes from "./BookSpotLight.module.scss";
 import SecondaryHeading from "../../ui/SecondaryHeading";
-import HeadingTertiary from "../../ui/HeadingTertiary";
-import { SubtitleHeading } from "../../ui/Headings";
-import { SupportingHeading } from "../../ui/Headings";
-
-import image1 from "../../../assets/project/little-lemon/little-lemon_LS.png";
-import image2 from "../../../assets/project/little-lemon/little-lemon_SS.png";
-import weekSpecials from "../../../assets/project/little-lemon/weeks-specials.png";
-import testimonials from "../../../assets/project/little-lemon/testimonials.png";
-import footer from "../../../assets/project/little-lemon/footer.png";
-import backStory from "../../../assets/project/little-lemon/restaurant-backstory.png";
-
-import { FaReact, FaSass, FaGithub, FaFigma } from "react-icons/fa";
-import { BiLogoFirebase } from "react-icons/bi";
-
-import { TbBrandVscode } from "react-icons/tb";
-
-import reserveTable from "../../../assets/project/little-lemon/Reserve-a-table.png";
-
-import confirmation from "../../../assets/project/little-lemon/Booking-confirmation.png";
-
-import { Item } from "../../ui/UIComponents";
-
-import { ButtonLink } from "../../ui/ButtonOutline";
 import ImagesContainer from "../../ui/ImagesContainer";
+import image1 from "../../../assets/project/bookspotLight/bookspotlight.png";
+import image2 from "../../../assets/project/bookspotLight/bookspotlight_mobile.png";
+import HeadingTertiary from "../../ui/HeadingTertiary";
+import { Item } from "../../ui/UIComponents";
+import { SubtitleHeading, SupportingHeading } from "../../ui/Headings";
+import { ButtonLink } from "../../ui/ButtonOutline";
 
-function LittleLemonDetailPage() {
+function BookSpotLight() {
   return (
     <section className={classes.project}>
       <SecondaryHeading>little lemon restaurant</SecondaryHeading>
       <ImagesContainer image1={image1} image2={image2}></ImagesContainer>
-
       <div className={classes["project__overview"]}>
         <HeadingTertiary>Project overview</HeadingTertiary>
         <ul className={classes.list}>
@@ -121,30 +104,30 @@ function LittleLemonDetailPage() {
         <HeadingTertiary>Technologies Used:</HeadingTertiary>
         <ul>
           <li>
-            <FaReact></FaReact>
+            {/* <FaReact></FaReact> */}
             <span>React</span>
           </li>
 
           <li>
-            <FaSass></FaSass>
+            {/* <FaSass></FaSass> */}
             <span>Sass</span>
           </li>
 
           <li>
-            <BiLogoFirebase />
+            {/* <BiLogoFirebase /> */}
             <span>Firebase</span>
           </li>
           <li>
-            <FaGithub />
+            {/* <FaGithub /> */}
             <span>Github</span>
           </li>
 
           <li>
-            <TbBrandVscode />
+            {/* <TbBrandVscode /> */}
             <span>Vs</span>
           </li>
           <li>
-            <FaFigma />
+            {/* <FaFigma /> */}
             <span>Figma</span>
           </li>
         </ul>
@@ -238,9 +221,6 @@ function LittleLemonDetailPage() {
             table reservations for Little Lemon Restaurant, offering a more
             streamlined and convenient booking process.
           </Item>
-          <div className={classes.featuresImage}>
-            <img src={reserveTable} alt="" />
-          </div>
 
           <Item>
             A booking confirmation feature to provide users with acknowledgment
@@ -248,7 +228,7 @@ function LittleLemonDetailPage() {
           </Item>
 
           <div className={classes.featuresImage}>
-            <img src={confirmation} alt="" />
+            {/* <img src={confirmation} alt="" /> */}
           </div>
         </ul>
       </div>
@@ -300,7 +280,7 @@ function LittleLemonDetailPage() {
             </Item>
 
             <div className={classes.featuresImage}>
-              <img src={weekSpecials} alt="weeks specials" />
+              {/* <img src={weekSpecials} alt="weeks specials" /> */}
             </div>
           </ul>
         </div>
@@ -341,23 +321,23 @@ function LittleLemonDetailPage() {
         <ul className={classes.list}>
           <Item>Home page - Restaurant's back story section</Item>
           <div className={classes.featuresImage}>
-            <img src={backStory} alt="back story" />
+            {/* <img src={backStory} alt="back story" /> */}
           </div>
           <Item>Home page - Footer section</Item>
           <div className={classes.featuresImage}>
-            <img src={footer} alt="footer" />
+            {/* <img src={footer} alt="footer" /> */}
           </div>
           <Item>Home page - Testimonial section</Item>
           <div className={classes.featuresImage}>
-            <img src={testimonials} alt="testimonials" />
+            {/* <img src={testimonials} alt="testimonials" /> */}
           </div>
         </ul>
       </div>
       <div className={classes.btns}>
-        <ButtonLink href="https://little-lemon-restaurant-4ced5.web.app/">
+        <ButtonLink href="https://bookspotlight.netlify.app/">
           Live Demo
         </ButtonLink>
-        <ButtonLink href="https://github.com/Bhavani-Bolloju/little-lemon-restaurant">
+        <ButtonLink href="https://github.com/Bhavani-Bolloju/bookSpotLight">
           Github
         </ButtonLink>
       </div>
@@ -365,4 +345,4 @@ function LittleLemonDetailPage() {
   );
 }
 
-export default LittleLemonDetailPage;
+export default BookSpotLight;

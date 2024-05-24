@@ -10,7 +10,7 @@
     padding: 10rem 15rem;
   }
   @media screen and (max-width: 950px) {
-    padding: 10rem;
+    padding: 8rem;
   }
   @media screen and (max-width: 600px) {
     padding: 5rem;
@@ -18,42 +18,57 @@
 
   .list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(46%, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(25rem, 1fr));
+    // grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 5rem;
+    width: 100%;
+
     .item {
+      height: 100%;
+      max-height: 35rem;
       width: 100%;
-      max-height: 32rem;
       overflow: hidden;
       position: relative;
       transition: transform 0.5s;
       border-radius: 1rem;
+
       img {
         width: 100%;
         height: 100%;
+        background-size: contain;
         object-fit: cover;
+        background-position: top;
+        background-blend-mode: darken;
       }
 
       .content {
         position: absolute;
-        color: var(--color-secondary--2);
+        overflow: hidden;
         width: 100%;
-        left: 0;
-        bottom: -10px;
-        padding: 3rem 1rem;
+        min-height: 50%;
+        bottom: 0;
+        color: var(--color-secondary--2);
+        padding: 2rem 1rem;
         background-color: #000000cb;
         backdrop-filter: blur(5px);
-        transform: translateY(100%);
-        transform-origin: bottom;
-        overflow: hidden;
-        transition: transform 0.2s;
+        border-radius: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        transform: translateY(150%);
+        transition: all 0.2s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+
+        &__container {
+          height: 50%;
+          width: 100%;
+        }
 
         h4 {
-          font-size: 2.5rem;
+          font-size: var(--heading-4);
           color: var(--color-tertiary--1);
           text-transform: capitalize;
           font-family: var(--font-family--2);
@@ -70,128 +85,11 @@
       &:hover {
         transform: scale(1.05);
         .content {
-          transform: translateY(0%);
+          transform: translateY(1%);
+          visibility: visible;
+          opacity: 1;
         }
       }
-    }
-  }
-}
-
-.project {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-
-  & > h3 {
-    @media screen and (min-width: 700px) {
-      display: none;
-    }
-  }
-
-  &:not(:last-child) {
-    padding-bottom: 8rem;
-    @media screen and (max-width: 700px) {
-      padding-bottom: 5rem;
-    }
-  }
-
-  &__image {
-    max-height: 50rem;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 0.5rem;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-    object-fit: contain;
-    transform-origin: top;
-    transform: scale(1);
-    transition: all 0.3s;
-  }
-
-  &__image:hover img {
-    transform: scale(1.1);
-  }
-
-  &__content {
-    flex-basis: 60%;
-    min-width: 40%;
-
-    text-align: start;
-    position: relative;
-    z-index: 1000;
-    flex-shrink: 1;
-    &--line {
-      display: flex;
-      gap: 1rem;
-    }
-
-    @media screen and (max-width: 900px) and (min-width: 700px) {
-      position: absolute;
-      padding: 5rem 20rem;
-      width: 100%;
-      height: inherit;
-
-      min-height: fit-content;
-      background: linear-gradient(
-        to top left,
-        #121212db 30%,
-        #dc143cdd 50%,
-        #121212ef 80%
-      );
-      backdrop-filter: blur(10px);
-      transform: translateX(-100%);
-      transition: all 0.3s;
-    }
-
-    @media screen and (max-width: 800px) and (min-width: 700px) {
-      padding: 2rem 5rem;
-    }
-
-    @media screen and (max-width: 700px) {
-      h3 {
-        display: none;
-      }
-    }
-  }
-
-  &:hover &__content {
-    @media screen and (max-width: 900px) and (min-width: 700px) {
-      transform: translateX(0%);
-    }
-  }
-
-  &:hover &__image {
-    @media screen and (max-width: 900px) and (min-width: 700px) {
-      img {
-        transform: scale(1.1);
-        filter: blur(1px);
-      }
-    }
-  }
-
-  &__text {
-    line-height: var(--line-height--2);
-    text-align: start;
-    font-size: 1.8rem;
-    &::first-letter {
-      font-size: 2rem;
-      color: var(--color-tertiary--1);
-    }
-  }
-
-  &__stack {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-    svg {
-      font-size: 2.2rem;
-      color: var(--color-icons--1);
     }
   }
 }
@@ -213,9 +111,8 @@
 
     button,
     a {
-      width: 80%;
       text-align: center;
-      padding: 1rem 3rem;
+      padding: 1rem;
     }
   }
 }

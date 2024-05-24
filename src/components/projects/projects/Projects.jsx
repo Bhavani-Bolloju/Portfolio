@@ -1,20 +1,22 @@
 import classes from "./Projects.module.scss";
 import ORPL from "../../../assets/project/orpl/ORPL_LS.png";
-import weather1 from "../../../assets/project/weather/weather_LS.png";
+// import weather1 from "../../../assets/project/weather/weather_LS.png";
 
 import shop from "../../../assets/project/e-commerce/shop-cart_LS.png";
 
 import littleLemon from "../../../assets/project/little-lemon/little-lemon_LS.png";
 
+import bookSpotLight from "../../../assets/project/bookspotLight/bookspotlight.png";
+
 import SecondaryHeading from "../../ui/SecondaryHeading";
-import HeadingTertiary from "../../ui/HeadingTertiary";
+// import HeadingTertiary from "../../ui/HeadingTertiary";
 
 import { useNavigate } from "react-router-dom";
 
-import { FaReact, FaSass, FaFigma } from "react-icons/fa";
-import { IoLogoFirebase } from "react-icons/io5";
+// import { FaReact, FaSass, FaFigma } from "react-icons/fa";
+// import { IoLogoFirebase } from "react-icons/io5";
 
-import { ProjectCard, ProjectCardReverse } from "../../ui/ProjectCard";
+// import { ProjectCard, ProjectCardReverse } from "../../ui/ProjectCard";
 
 import { ButtonOutline, ButtonLink } from "../../ui/ButtonOutline";
 
@@ -25,16 +27,18 @@ const Project = function ({ image, navLink, title, githubLink }) {
     <div className={classes.item}>
       <img src={image} alt={title} />
       <div className={classes.content}>
-        <h4>{title}</h4>
-        <div className={classes.btns}>
-          <ButtonOutline
-            onClick={() => {
-              navigate(`/project/${navLink}`);
-            }}
-          >
-            read more
-          </ButtonOutline>
-          <ButtonLink href={githubLink}>git hub</ButtonLink>
+        <div className={classes["content__container"]}>
+          <h4>{title}</h4>
+          <div className={classes.btns}>
+            <ButtonOutline
+              onClick={() => {
+                navigate(`/project/${navLink}`);
+              }}
+            >
+              read more
+            </ButtonOutline>
+            <ButtonLink href={githubLink}>git hub</ButtonLink>
+          </div>
         </div>
       </div>
     </div>
@@ -67,11 +71,17 @@ function Projects() {
           githubLink="https://github.com/Bhavani-Bolloju/E-commerce"
         />
         <Project
+          image={bookSpotLight}
+          navLink="bookSpotLight"
+          title="04. BookSpotLight"
+          githubLink="https://github.com/Bhavani-Bolloju/bookSpotLight"
+        />
+        {/* <Project
           image={weather1}
           navLink="weather"
           title="04. Daily Weather"
           githubLink="https://github.com/Bhavani-Bolloju/Weather-App"
-        />
+        /> */}
       </div>
     </section>
   );
