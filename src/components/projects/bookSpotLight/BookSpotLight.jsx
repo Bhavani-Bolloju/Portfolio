@@ -16,13 +16,13 @@ import {
 } from "../../ui/Headings";
 import { ButtonLink } from "../../ui/ButtonOutline";
 
-import authenticationPage from "../../../assets/project/bookspotLight/bookSpotLight-authentication.png";
-import bookmarks from "../../../assets/project/bookspotLight/bookSpotLight-bookmarks.png";
-import bookDetailPage from "../../../assets/project/bookspotLight/bookSpotLight-detailBook.png";
-import genreSection from "../../../assets/project/bookspotLight/bookSpotLight-genre-section.png";
-import moreBooks from "../../../assets/project/bookspotLight/bookSpotLight-more.png";
-import recommendedBook from "../../../assets/project/bookspotLight/bookSpotLight-recommended-books.png";
-import searchResults from "../../../assets/project/bookspotLight/bookSpotLight-search-results.png";
+// import authenticationPage from "../../../assets/project/bookspotLight/bookSpotLight-authentication.png";
+// import bookmarks from "../../../assets/project/bookspotLight/bookSpotLight-bookmarks.png";
+// import bookDetailPage from "../../../assets/project/bookspotLight/bookSpotLight-detailBook.png";
+// import genreSection from "../../../assets/project/bookspotLight/bookSpotLight-genre-section.png";
+// import moreBooks from "../../../assets/project/bookspotLight/bookSpotLight-more.png";
+// import recommendedBook from "../../../assets/project/bookspotLight/bookSpotLight-recommended-books.png";
+// import searchResults from "../../../assets/project/bookspotLight/bookSpotLight-search-results.png";
 
 function BookSpotLight() {
   return (
@@ -242,7 +242,7 @@ function BookSpotLight() {
         </ul>
       </div>
 
-      <div className={classes["project__designs"]}>
+      {/* <div className={classes["project__designs"]}>
         <HeadingTertiary>Website preview</HeadingTertiary>
 
         <ul className={classes.list}>
@@ -275,7 +275,7 @@ function BookSpotLight() {
             <img src={searchResults} alt="search results" />
           </div>
         </ul>
-      </div>
+      </div> */}
       <div className={classes.performance}>
         <HeadingTertiary>
           Performance Enhancements and Best Practices:
