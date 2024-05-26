@@ -8,6 +8,7 @@ import WeatherProjectDetail from "./components/projects/weather/WeatherProjectDe
 import ShopCartDetailPage from "./components/projects/E-commerce/ShopCartDetailPage";
 
 import LittleLemonDetailPage from "./components/projects/little-lemon/LittleLemonDetailPage";
+
 import BookSpotLight from "./components/projects/bookSpotLight/BookSpotLight";
 
 import CustomCursor from "./components/ui/CustomCursor";
