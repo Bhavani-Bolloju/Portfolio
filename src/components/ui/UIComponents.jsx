@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+
 import classes from "./UIComponents.module.scss";
 
 export function Item(props) {

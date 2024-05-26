@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import classes from "./HeadingTertiary.module.scss";
 
 function HeadingTertiary(props) {

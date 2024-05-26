@@ -2,10 +2,10 @@
 // import React from "react";
 import classes from "./BookSpotLight.module.scss";
 import SecondaryHeading from "../../ui/SecondaryHeading";
-// import ImagesContainer from "../../ui/ImagesContainer";
-// import image1 from "../../../assets/project/bookspotLight/bookspotlight.png";
+import ImagesContainer from "../../ui/ImagesContainer";
 
-// import image2 from "../../../assets/project/bookspotLight/bookspotlight_mobile.png";
+import mobileView from "../../../assets/project/bookspotLight/bookspotlight_mobile.png";
+import desktopView from "../../../assets/project/bookspotLight/bookspotlight_desktop.png";
 
 import HeadingTertiary from "../../ui/HeadingTertiary";
 import { Item } from "../../ui/UIComponents";
@@ -16,19 +16,22 @@ import {
 } from "../../ui/Headings";
 import { ButtonLink } from "../../ui/ButtonOutline";
 
-import authenticationPage from "../../../assets/project/bookspotLight/BookSpotLight-authentication.png";
-import bookmarks from "../../../assets/project/bookspotLight/BookSpotLight-bookmarks.png";
-import bookDetailPage from "../../../assets/project/bookspotLight/BookSpotLight-detailBook.png";
-import genreSection from "../../../assets/project/bookspotLight/BookSpotLight-genre-section.png";
-import moreBooks from "../../../assets/project/bookspotLight/BookSpotLight-more.png";
-import recommendedBook from "../../../assets/project/bookspotLight/BookSpotLight-recommended-books.png";
-import searchResults from "../../../assets/project/bookspotLight/BookSpotLight-search-results.png";
+import authenticationPage from "../../../assets/project/bookspotLight/bookSpotLight-authentication.png";
+import bookmarks from "../../../assets/project/bookspotLight/bookSpotLight-bookmarks.png";
+import bookDetailPage from "../../../assets/project/bookspotLight/bookSpotLight-detailBook.png";
+import genreSection from "../../../assets/project/bookspotLight/bookSpotLight-genre-section.png";
+import moreBooks from "../../../assets/project/bookspotLight/bookSpotLight-more.png";
+import recommendedBook from "../../../assets/project/bookspotLight/bookSpotLight-recommended-books.png";
+import searchResults from "../../../assets/project/bookspotLight/bookSpotLight-search-results.png";
 
 function BookSpotLight() {
   return (
     <section className={classes.project}>
       <SecondaryHeading>little lemon restaurant</SecondaryHeading>
-      {/* <ImagesContainer image1={image1} image2={image2}></ImagesContainer> */}
+      <ImagesContainer
+        image1={desktopView}
+        image2={mobileView}
+      ></ImagesContainer>
       <div className={classes["project__overview"]}>
         <HeadingTertiary>Project overview</HeadingTertiary>
         <ul className={classes.list}>

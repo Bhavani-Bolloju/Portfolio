@@ -6,7 +6,7 @@ import shop from "../../../assets/project/e-commerce/shop-cart_LS.png";
 
 import littleLemon from "../../../assets/project/little-lemon/little-lemon_LS.png";
 
-import bookSpotLight from "../../../assets/project/bookspotLight/bookspotlight.png";
+import bookSpotLight from "../../../assets/project/bookspotLight/bookspotlight_desktop.png";
 
 import SecondaryHeading from "../../ui/SecondaryHeading";
 // import HeadingTertiary from "../../ui/HeadingTertiary";
