@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import classes from "./Footer.module.scss";
-import { SiSubstack, SiLinkedin, SiGithub } from "react-icons/si";
+// import { SiSubstack, SiLinkedin, SiGithub } from "react-icons/si";
 import SocialLinks from "../ui/SocialLinks";
 
 import { SubtitleHeading } from "../ui/Headings";

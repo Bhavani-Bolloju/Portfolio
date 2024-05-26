@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { RxArrowLeft } from "react-icons/rx";
 import classes from "./ProjectPage.module.scss";
