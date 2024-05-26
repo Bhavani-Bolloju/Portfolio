@@ -1,49 +1,23 @@
 import classes from "./Projects.module.scss";
-import ORPL from "../../../assets/project/orpl/ORPL_LS.png";
+import ORPL from "../../../assets/project/orpl/ORPL_desktop.png";
 // import weather1 from "../../../assets/project/weather/weather_LS.png";
 
-import shop from "../../../assets/project/e-commerce/shop-cart_LS.png";
+import shop from "../../../assets/project/e-commerce/shot-cart_desktop.png";
 
-import littleLemon from "../../../assets/project/little-lemon/little-lemon_LS.png";
+import littleLemon from "../../../assets/project/little-lemon/Little-Lemon_desktop.png";
 
 import bookSpotLight from "../../../assets/project/bookspotLight/bookspotlight_desktop.png";
 
 import SecondaryHeading from "../../ui/SecondaryHeading";
+import Project from "./Project";
 // import HeadingTertiary from "../../ui/HeadingTertiary";
-
-import { useNavigate } from "react-router-dom";
 
 // import { FaReact, FaSass, FaFigma } from "react-icons/fa";
 // import { IoLogoFirebase } from "react-icons/io5";
 
 // import { ProjectCard, ProjectCardReverse } from "../../ui/ProjectCard";
 
-import { ButtonOutline, ButtonLink } from "../../ui/ButtonOutline";
-
 // eslint-disable-next-line react/prop-types
-const Project = function ({ image, navLink, title, githubLink }) {
-  const navigate = useNavigate();
-  return (
-    <div className={classes.item}>
-      <img src={image} alt={title} />
-      <div className={classes.content}>
-        <div className={classes["content__container"]}>
-          <h4>{title}</h4>
-          <div className={classes.btns}>
-            <ButtonOutline
-              onClick={() => {
-                navigate(`/project/${navLink}`);
-              }}
-            >
-              read more
-            </ButtonOutline>
-            <ButtonLink href={githubLink}>git hub</ButtonLink>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 function Projects() {
   // const navigate = useNavigate();
@@ -53,29 +27,30 @@ function Projects() {
       <SecondaryHeading>My projects</SecondaryHeading>
       <div className={classes.list}>
         <Project
+          image={bookSpotLight}
+          navLink="bookSpotLight"
+          title="01. BookSpotLight"
+          githubLink="https://github.com/Bhavani-Bolloju/bookSpotLight"
+        />
+        <Project
           image={ORPL}
           navLink="ouranos"
-          title="01. oranous robotics"
+          title="02. oranous robotics"
           githubLink="https://github.com/Bhavani-Bolloju/Ouranos-Project-website"
         />
         <Project
           image={littleLemon}
           navLink="littleLemon"
-          title="02. little lemon restaurant"
+          title="03. little lemon restaurant"
           githubLink="https://github.com/Bhavani-Bolloju/little-lemon-restaurant"
         />
         <Project
           image={shop}
           navLink="shopCart"
-          title="03. Shop Cart"
+          title="04. Shop Cart"
           githubLink="https://github.com/Bhavani-Bolloju/E-commerce"
         />
-        <Project
-          image={bookSpotLight}
-          navLink="bookSpotLight"
-          title="04. BookSpotLight"
-          githubLink="https://github.com/Bhavani-Bolloju/bookSpotLight"
-        />
+
         {/* <Project
           image={weather1}
           navLink="weather"
