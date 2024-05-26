@@ -2,9 +2,11 @@
 // import React from "react";
 import classes from "./BookSpotLight.module.scss";
 import SecondaryHeading from "../../ui/SecondaryHeading";
-import ImagesContainer from "../../ui/ImagesContainer";
-import image1 from "../../../assets/project/bookspotLight/bookspotlight.png";
-import image2 from "../../../assets/project/bookspotLight/bookspotlight_mobile.png";
+// import ImagesContainer from "../../ui/ImagesContainer";
+// import image1 from "../../../assets/project/bookspotLight/bookspotlight.png";
+
+// import image2 from "../../../assets/project/bookspotLight/bookspotlight_mobile.png";
+
 import HeadingTertiary from "../../ui/HeadingTertiary";
 import { Item } from "../../ui/UIComponents";
 import {
@@ -26,7 +28,7 @@ function BookSpotLight() {
   return (
     <section className={classes.project}>
       <SecondaryHeading>little lemon restaurant</SecondaryHeading>
-      <ImagesContainer image1={image1} image2={image2}></ImagesContainer>
+      {/* <ImagesContainer image1={image1} image2={image2}></ImagesContainer> */}
       <div className={classes["project__overview"]}>
         <HeadingTertiary>Project overview</HeadingTertiary>
         <ul className={classes.list}>
