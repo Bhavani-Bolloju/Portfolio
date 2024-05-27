@@ -13,24 +13,8 @@
 
   --color-icons--1: #ffd700;
 
-  //font-family  --font-family--1: "Montserrat", sans-serif;
-
-  //for content and CTS
-  --font-family--2: "Roboto", sans-serif;
-  // --font-family--2: "Source Sans 3", sans-serif;
-
-  //for heading and title -- lato and poppins
-  // --font-family--3: "Lato", sans-serif;
-  --font-family--3: "Poppins", sans-serif;
-
-  //
-
-  // --font-family--5: "Fira Code", monospace;
-  --font-family--5: "Roboto Mono", monospace;
-  // --font-family--5: "Source Code Pro", monospace;
-
-  //only for content
-  --font-family--4: "Nunito", sans-serif;
+  --font-content: "REM", sans-serif;
+  --font-heading: "Chivo Mono", monospace;
 
   //border-radius
   --border-radius--1: 0.2rem;
@@ -77,7 +61,7 @@ html {
 }
 
 body {
-  font-family: var(--font-family--4);
+  font-family: var(--font-content);
   font-size: 1.6rem;
   color: var(--color-secondary--1);
   background-color: var(--color-primary--1);

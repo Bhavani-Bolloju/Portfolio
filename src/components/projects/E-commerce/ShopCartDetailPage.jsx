@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./ShopCartDetailPage.module.scss";
 
 import shopCart1 from "../../../assets/project/e-commerce/shop-cart_LS.png";
@@ -134,7 +133,7 @@ function ShopCartDetailPage() {
             </Item>
             <Item>
               Utilized Flexbox to efficiently display the categorized products,
-              where each category's name served as a title, followed by the
+              where each category&apos;s name served as a title, followed by the
               respective products.
             </Item>
             <Item>
@@ -150,6 +149,7 @@ function ShopCartDetailPage() {
               <a
                 href="https://github-production-user-asset-6210df.s3.amazonaws.com/100474477/272550806-effe9a3d-a13f-4098-bbc4-ad530285f7c5.png"
                 target="_blank"
+                rel="noreferrer"
               >
                 here
               </a>
@@ -184,10 +184,10 @@ function ShopCartDetailPage() {
             </Item>
             <Item>
               <span className={classes.highlight}>Action Creator Thunks: </span>
-              To achieve this, i used custom action creators called "thunks."
-              These thunks acted as messengers between the app, Redux (our data
-              manager), and Firebase. They made sure that changes from one side
-              were quickly mirrored on the other.
+              To achieve this, i used custom action creators called
+              &quote;thunks.&quote; These thunks acted as messengers between the
+              app, Redux (our data manager), and Firebase. They made sure that
+              changes from one side were quickly mirrored on the other.
             </Item>
             <Item>
               <span className={classes.highlight}>Firebase Integration: </span>
@@ -212,13 +212,13 @@ function ShopCartDetailPage() {
           <p>
             As part of future enhancements to the website, I plan to introduce
             an advanced product search feature. This feature will empower users
-            to quickly and efficiently find the products they're looking for by
-            using search keywords.
+            to quickly and efficiently find the products they&apos;re looking
+            for by using search keywords.
           </p>
           <SupportingHeading>key components:</SupportingHeading>
           <ul>
             <Item>
-              A search bar will be added to the website's header for easy
+              A search bar will be added to the website&apos;s header for easy
               access.
             </Item>
             <Item>
@@ -237,8 +237,8 @@ function ShopCartDetailPage() {
           <SupportingHeading>Description:</SupportingHeading>
           <p>
             I plan to introduce a user product review system to further enhance
-            the website's user engagement and trustworthiness. Users will have
-            the ability to leave reviews and ratings for products they have
+            the website&apos;s user engagement and trustworthiness. Users will
+            have the ability to leave reviews and ratings for products they have
             purchased. Each product detail page will include a dedicated review
             section where users can share their experiences and insights
           </p>

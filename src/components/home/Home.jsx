@@ -11,24 +11,20 @@ function Home() {
   return (
     <section className={classes.home} id="home">
       <div className={classes["home__content"]}>
-        <div className={classes["name"]}>
-          <span>Hello, i&apos;m </span>
-          <span> Bhavani Bolloju</span>
+        <div className={classes["profile__name"]}>
+          <p>Hello !👋 </p>
+          <p>I am Bhavani</p>
         </div>
 
         <p className={classes.intro}>
-          A <span className={classes.highlight}> Front-end web developer</span>,
-          i build responsive and user-friendly website.
+          <span className={classes.highlight}>A Front-end web developer</span>
+          , Welcome to my portfolio🙂
           <br />
-          Welcome to my portfolio.
         </p>
 
         <SocialLinks></SocialLinks>
 
         <div className={classes.btns}>
-          <ButtonLink href={resume} download="Bhavani-CV.pdf">
-            Download CV
-          </ButtonLink>
           <Link
             activeClass={classes["active"]}
             to="projects"
@@ -39,6 +35,9 @@ function Home() {
           >
             View my work
           </Link>
+          <ButtonLink href={resume} download="Bhavani-CV.pdf">
+            Download CV
+          </ButtonLink>
         </div>
       </div>
 
