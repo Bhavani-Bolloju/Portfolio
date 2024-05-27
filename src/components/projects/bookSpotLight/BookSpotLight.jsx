@@ -16,22 +16,19 @@ import {
 } from "../../ui/Headings";
 import { ButtonLink } from "../../ui/ButtonOutline";
 
-// import authenticationPage from "../../../assets/project/bookspotLight/bookSpotLight-authentication.png";
-// import bookmarks from "../../../assets/project/bookspotLight/bookSpotLight-bookmarks.png";
-// import bookDetailPage from "../../../assets/project/bookspotLight/bookSpotLight-detailBook.png";
-// import genreSection from "../../../assets/project/bookspotLight/bookSpotLight-genre-section.png";
-// import moreBooks from "../../../assets/project/bookspotLight/bookSpotLight-more.png";
-// import recommendedBook from "../../../assets/project/bookspotLight/bookSpotLight-recommended-books.png";
-// import searchResults from "../../../assets/project/bookspotLight/bookSpotLight-search-results.png";
+import authentication from "../../../assets/project/bookspotLight/authentication.png";
+import bookmarks from "../../../assets/project/bookspotLight/bookmarks.png";
+import genre from "../../../assets/project/bookspotLight/genre-section.png";
+import moreBooks from "../../../assets/project/bookspotLight/more-books.png";
+import recommended from "../../../assets/project/bookspotLight/recommended-books.png";
+import search from "../../../assets/project/bookspotLight/search-results.png";
+import detail from "../../../assets/project/bookspotLight/detailBook.png";
 
 function BookSpotLight() {
   return (
     <section className={classes.project}>
       <SecondaryHeading>little lemon restaurant</SecondaryHeading>
-      <ImagesContainer
-        image1={desktopView}
-        image2={mobileView}
-      ></ImagesContainer>
+      <ImagesContainer image1={desktopView} image2={mobileView} />
       <div className={classes["project__overview"]}>
         <HeadingTertiary>Project overview</HeadingTertiary>
         <ul className={classes.list}>
@@ -242,25 +239,25 @@ function BookSpotLight() {
         </ul>
       </div>
 
-      {/* <div className={classes["project__designs"]}>
+      <div className={classes["project__designs"]}>
         <HeadingTertiary>Website preview</HeadingTertiary>
 
         <ul className={classes.list}>
           <Item>Home page - Genre section section</Item>
           <div className={classes.featuresImage}>
-            <img src={genreSection} alt="genre section" />
+            <img src={genre} alt="genre section" />
           </div>
           <Item>Authentication Page</Item>
           <div className={classes.featuresImage}>
-            <img src={authenticationPage} alt="user authentication" />
+            <img src={authentication} alt="user authentication" />
           </div>
           <Item>Detail book Page</Item>
           <div className={classes.featuresImage}>
-            <img src={bookDetailPage} alt="detail book" />
+            <img src={detail} alt="detail book" />
           </div>
           <Item>Recommended Books</Item>
           <div className={classes.featuresImage}>
-            <img src={recommendedBook} alt="recommended books" />
+            <img src={recommended} alt="recommended books" />
           </div>
           <Item>Load more books of particular genre</Item>
           <div className={classes.featuresImage}>
@@ -272,10 +269,10 @@ function BookSpotLight() {
           </div>
           <Item>Search results</Item>
           <div className={classes.featuresImage}>
-            <img src={searchResults} alt="search results" />
+            <img src={search} alt="search results" />
           </div>
         </ul>
-      </div> */}
+      </div>
       <div className={classes.performance}>
         <HeadingTertiary>
           Performance Enhancements and Best Practices:
