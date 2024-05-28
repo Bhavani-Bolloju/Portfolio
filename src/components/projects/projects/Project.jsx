@@ -23,6 +23,7 @@ const Project = function ({ image, navLink, title, githubLink }) {
           </div>
         </div>
       </div>
+      {/* <div className={classes.line}></div> */}
     </div>
   );
 };

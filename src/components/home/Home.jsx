@@ -17,8 +17,8 @@ function Home() {
         </div>
 
         <p className={classes.intro}>
-          <span className={classes.highlight}>A Front-end web developer</span>
-          , Welcome to my portfolio🙂
+          <span className={classes.highlight}>A Front-end web developer</span>,
+          Welcome to my portfolio<span className={classes.highlight}>🙂</span>
           <br />
         </p>
 
