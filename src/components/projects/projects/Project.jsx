@@ -23,7 +23,8 @@ const Project = function ({ image, navLink, title, githubLink }) {
           </div>
         </div>
       </div>
-      {/* <div className={classes.line}></div> */}
+      <div className={classes["line-1"]}></div>
+      <div className={classes["line-2"]}></div>
     </div>
   );
 };
