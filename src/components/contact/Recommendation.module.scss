@@ -1,11 +1,10 @@
 .recommendation {
-  padding: 10rem 20rem;
+  padding: 15rem 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background: url("../../assets/home/noise_3.png");
   text-align: center;
-  min-height: 100vh;
 
   @media screen and (max-width: 1250px) {
     padding: 10rem 15rem;

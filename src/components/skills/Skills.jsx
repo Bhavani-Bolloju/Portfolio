@@ -1,10 +1,9 @@
-import React from "react";
+// import React from "react";
 import classes from "./Skills.module.scss";
 
 import {
   SiCss3,
   SiHtml5,
-  SiSass,
   SiJavascript,
   SiReact,
   SiGithub,

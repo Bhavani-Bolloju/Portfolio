@@ -9,11 +9,18 @@ function About() {
         <SecondaryHeading>About me</SecondaryHeading>
       </div>
       <p>
-        A passionate self-taught Front-End Developer with a background in
-        finance. Over the past year and a half, I&apos;ve dedicated myself to
-        mastering web development. My journey began with a curiosity for coding
-        and a commitment to learning. I now excel in HTML, CSS, JavaScript, and
-        React.js, crafting interactive and responsive websites.
+        Driven by a passion for crafting visually appealing and user-friendly
+        web experiences, I began my self-taught journey into web development. In
+        the early days, I navigated limited online resources, using any app
+        available to learn HTML and CSS. Balancing a full-time job, I dedicated
+        time each day to refine my skills.
+      </p>
+
+      <p>
+        The pandemic was a turning point, intensifying my job dissatisfaction
+        and motivating me to follow my passion full-time. I quit my job,
+        immersed myself in online courses and coding bootcamps, and mastered
+        HTML, CSS, JavaScript, and the React.js framework.
       </p>
     </section>
   );

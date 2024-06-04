@@ -15,13 +15,14 @@ function Home() {
       <section className={classes.home} id="home">
         <div className={classes["home__content"]}>
           <h1 className={classes["profile__name"]}>
-            <p className={classes.hello}>Hello !👋 </p>
+            <p className={classes.hello}>Hello👋 </p>
             <p>I am Bhavani</p>
           </h1>
 
           <p className={classes.intro}>
-            <span className={classes.highlight}>A Front-end web developer</span>
-            , Welcome to my portfolio
+            A self-taught{" "}
+            <span className={classes.highlight}>Front-end web developer</span>,
+            Welcome to my portfolio
             <span className={classes.highlight}>🙂</span>
             <br />
           </p>
