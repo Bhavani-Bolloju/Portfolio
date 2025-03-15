@@ -1,26 +1,26 @@
 .custom-cursor {
   position: fixed;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.689);
   background-color: rgba(255, 255, 255, 0.689);
   pointer-events: none;
   transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
   z-index: 20000;
+  transition: top 0.15s linear, left 0.15s linear;
 
   &--dot {
     position: fixed;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     border: 2px solid var(--color-tertiary--1);
     pointer-events: none;
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
     z-index: 20000;
-    transition: all 0.15s;
+    transition: all 0.3s linear;
   }
 }
 
